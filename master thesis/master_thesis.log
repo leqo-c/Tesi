@@ -1,0 +1,1630 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.3)  14 SEP 2018 16:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**master_thesis.tex
+(./master_thesis.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 6 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\csq@reset=\count89
+\csq@gtype=\count90
+\csq@glevel=\count91
+\csq@qlevel=\count92
+\csq@maxlvl=\count93
+\csq@tshold=\count94
+\csq@ltx@everypar=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Disabling multilingual quotes.
+Package csquotes Info: Disabling multilingual quotes.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+)
+Package csquotes Info: Allocating character ".
+
+(./algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count95
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip43
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip44
+\skiplinenumber=\skip45
+\skiprule=\skip46
+\skiphlne=\skip47
+\skiptext=\skip48
+\skiplength=\skip49
+\algomargin=\skip50
+\skipalgocfslide=\skip51
+\algowidth=\dimen103
+\inoutsize=\dimen104
+\inoutindent=\dimen105
+\interspacetitleruled=\dimen106
+\interspacealgoruled=\dimen107
+\interspacetitleboxruled=\dimen108
+\algocf@ruledwidth=\skip52
+\algocf@inoutbox=\box26
+\algocf@inputbox=\box27
+\AlCapSkip=\skip53
+\AlCapHSkip=\skip54
+\algoskipindent=\skip55
+\algocf@nlbox=\box28
+\algocf@hangingbox=\box29
+\algocf@untilbox=\box30
+\algocf@skipuntil=\skip56
+\algocf@capbox=\box31
+\algocf@lcaptionbox=\skip57
+\algoheightruledefault=\skip58
+\algoheightrule=\skip59
+\algotitleheightruledefault=\skip60
+\algotitleheightrule=\skip61
+\c@algocfline=\count97
+\c@algocfproc=\count98
+\c@algocf=\count99
+\algocf@algoframe=\box32
+\algocf@algobox=\box33
+)
+(./algpseudocode.sty
+Package: algpseudocode 
+ (./algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count100
+\c@ALG@rem=\count101
+\c@ALG@nested=\count102
+\ALG@tlm=\skip62
+\ALG@thistlm=\skip63
+\c@ALG@Lnr=\count103
+\c@ALG@blocknr=\count104
+\c@ALG@storecount=\count105
+\c@ALG@tmpcounter=\count106
+\ALG@tmplength=\skip64
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+\c@ContinuedFloat=\count108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip74
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen118
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen119
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count109
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count110
+\leftroot@=\count111
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count112
+\DOTSCASE@=\count113
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box34
+\strutbox@=\box35
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
+\dotsspace@=\muskip10
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks18
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks19
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks20
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen127
+\extrarowheight=\dimen128
+\NC@list=\toks22
+\extratabsurround=\skip77
+\backup@length=\skip78
+)
+\TX@col@width=\dimen129
+\TX@old@table=\dimen130
+\TX@old@col=\dimen131
+\TX@target=\dimen132
+\TX@delta=\dimen133
+\TX@cols=\count121
+\TX@ftn=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip79
+\multirow@cntb=\count122
+\multirow@dima=\skip80
+\bigstrutjot=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen135
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count125
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count126
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen136
+\Fld@menulength=\count127
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count128
+\c@Item=\count129
+\c@Hfootnote=\count130
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count131
+\c@bookmark@seq@number=\count132
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip81
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count133
+\calc@Bcount=\count134
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count135
+\calc@Cskip=\skip84
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen141
+\AM@pageheight=\dimen142
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box36
+\AM@global@opts=\toks24
+\AM@toc@title=\toks25
+\c@AM@survey=\count136
+\AM@templatesizebox=\box37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen143
+\lightrulewidth=\dimen144
+\cmidrulewidth=\dimen145
+\belowrulesep=\dimen146
+\belowbottomsep=\dimen147
+\aboverulesep=\dimen148
+\abovetopsep=\dimen149
+\cmidrulesep=\dimen150
+\cmidrulekern=\dimen151
+\defaultaddspace=\dimen152
+\@cmidla=\count137
+\@cmidlb=\count138
+\@aboverulesep=\dimen153
+\@belowrulesep=\dimen154
+\@thisruleclass=\count139
+\@lastruleclass=\count140
+\@thisrulewidth=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count141
+\c@subtable=\count142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
+)
+(./master_thesis.aux)
+\openout1 = `master_thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package csquotes Info: Making character " active on input line 45.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count143
+\scratchdimen=\dimen156
+\scratchbox=\box38
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen157
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 45.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count149
+)
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
+
+(./master_thesis.out) (./master_thesis.out)
+\@outlinefile=\write3
+\openout3 = `master_thesis.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+<thesis_cover/cover.pdf, id=124, 597.50829pt x 845.0471pt>
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf>
+Package pdftex.def Info: thesis_cover/cover.pdf  used on input line 48.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf>
+Package pdftex.def Info: thesis_cover/cover.pdf  used on input line 48.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<thesis_cover/cover.pdf, id=127, page=1, 597.50829pt x 845.0471pt>
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf, page 1>
+Package pdftex.def Info: thesis_cover/cover.pdf , page1 used on input line 48.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf, page 1>
+Package pdftex.def Info: thesis_cover/cover.pdf , page1 used on input line 48.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf, page 1>
+Package pdftex.def Info: thesis_cover/cover.pdf , page1 used on input line 48.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf, page 1>
+Package pdftex.def Info: thesis_cover/cover.pdf , page1 used on input line 48.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: thesis_cover/cover.pdf Graphic file (type pdf)
+<use thesis_cover/cover.pdf, page 1>
+Package pdftex.def Info: thesis_cover/cover.pdf , page1 used on input line 48.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [1
+
+ <./thesis_cover/cover.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>]
+ [2
+
+]
+(./master_thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3
+
+])
+\tf@toc=\write4
+\openout4 = `master_thesis.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Chapter 1.
+[5
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] [8
+
+]
+Chapter 2.
+[9
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+<images/paper-images/show-attend.png, id=272, 542.77782pt x 222.07968pt>
+File: images/paper-images/show-attend.png Graphic file (type png)
+<use images/paper-images/show-attend.png>
+Package pdftex.def Info: images/paper-images/show-attend.png  used on input lin
+e 140.
+(pdftex.def)             Requested size: 390.0pt x 159.57532pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./images/paper-images/show-attend.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+<images/paper-images/grad-cam-orig.png, id=296, 224.84pt x 224.84pt>
+File: images/paper-images/grad-cam-orig.png Graphic file (type png)
+<use images/paper-images/grad-cam-orig.png>
+Package pdftex.def Info: images/paper-images/grad-cam-orig.png  used on input l
+ine 185.
+(pdftex.def)             Requested size: 191.10214pt x 191.11147pt.
+<images/paper-images/grad-cam-mask.png, id=297, 224.84pt x 224.84pt>
+File: images/paper-images/grad-cam-mask.png Graphic file (type png)
+<use images/paper-images/grad-cam-mask.png>
+Package pdftex.def Info: images/paper-images/grad-cam-mask.png  used on input l
+ine 190.
+(pdftex.def)             Requested size: 191.10214pt x 191.11147pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./images/paper-images/grad-cam-orig.png (PNG copy)> <./images/paper-images
+/grad-cam-mask.png (PNG copy)>]
+<images/paper-images/interpretable-convnets.png, id=315, 942.52126pt x 491.8375
+pt>
+File: images/paper-images/interpretable-convnets.png Graphic file (type png)
+<use images/paper-images/interpretable-convnets.png>
+Package pdftex.def Info: images/paper-images/interpretable-convnets.png  used o
+n input line 215.
+(pdftex.def)             Requested size: 350.99762pt x 183.16278pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./images/paper-images/interpretable-convnets.png>]
+<images/paper-images/visual-bag.jpeg, id=338, 627.34375pt x 588.1975pt>
+File: images/paper-images/visual-bag.jpeg Graphic file (type jpg)
+<use images/paper-images/visual-bag.jpeg>
+Package pdftex.def Info: images/paper-images/visual-bag.jpeg  used on input lin
+e 243.
+(pdftex.def)             Requested size: 195.0pt x 182.83296pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./images/paper-images/visual-bag.jpeg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+Chapter 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19
+
+]
+<images/easy_model.png, id=379, 266.4354pt x 165.7392pt>
+File: images/easy_model.png Graphic file (type png)
+<use images/easy_model.png>
+Package pdftex.def Info: images/easy_model.png  used on input line 294.
+(pdftex.def)             Requested size: 266.43474pt x 165.73877pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./images/easy_model.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+<images/neighborhood_gen.png, id=399, 1474.50874pt x 1738.495pt>
+File: images/neighborhood_gen.png Graphic file (type png)
+<use images/neighborhood_gen.png>
+Package pdftex.def Info: images/neighborhood_gen.png  used on input line 348.
+(pdftex.def)             Requested size: 390.0pt x 459.82358pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./images/neighborhood_gen.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 372.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 372.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+<images/insight-original.JPEG, id=423, 376.40625pt x 282.30469pt>
+File: images/insight-original.JPEG Graphic file (type jpg)
+<use images/insight-original.JPEG>
+Package pdftex.def Info: images/insight-original.JPEG  used on input line 388.
+(pdftex.def)             Requested size: 191.10214pt x 143.33163pt.
+<images/insight-resized.png, id=424, 458.71375pt x 347.2975pt>
+File: images/insight-resized.png Graphic file (type png)
+<use images/insight-resized.png>
+Package pdftex.def Info: images/insight-resized.png  used on input line 393.
+(pdftex.def)             Requested size: 191.10214pt x 144.6875pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./images/insight-original.JPEG> <./images/insight-resized.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+Chapter 4.
+[27
+
+]
+<images/tricycle.JPEG, id=447, 224.84pt x 224.84pt>
+File: images/tricycle.JPEG Graphic file (type jpg)
+<use images/tricycle.JPEG>
+Package pdftex.def Info: images/tricycle.JPEG  used on input line 433.
+(pdftex.def)             Requested size: 224.83945pt x 224.83945pt.
+<images/lime_neighborhood.png, id=449, 924.45375pt x 580.1675pt>
+File: images/lime_neighborhood.png Graphic file (type png)
+<use images/lime_neighborhood.png>
+Package pdftex.def Info: images/lime_neighborhood.png  used on input line 447.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./images/tricycle.JPEG>]
+<images/limecolor_neighborhood.png, id=458, 924.45375pt x 580.1675pt>
+File: images/limecolor_neighborhood.png Graphic file (type png)
+<use images/limecolor_neighborhood.png>
+Package pdftex.def Info: images/limecolor_neighborhood.png  used on input line 
+470.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./images/lime_neighborhood.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 489.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 489.
+
+<images/limesharp_neighborhood.png, id=468, 924.45375pt x 580.1675pt>
+File: images/limesharp_neighborhood.png Graphic file (type png)
+<use images/limesharp_neighborhood.png>
+Package pdftex.def Info: images/limesharp_neighborhood.png  used on input line 
+497.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./images/limecolor_neighborhood.png>]
+<images/limesharpcolor_neighborhood.png, id=478, 924.45375pt x 580.1675pt>
+File: images/limesharpcolor_neighborhood.png Graphic file (type png)
+<use images/limesharpcolor_neighborhood.png>
+Package pdftex.def Info: images/limesharpcolor_neighborhood.png  used on input 
+line 521.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./images/limesharp_neighborhood.png>]
+<images/image-based_neigh.png, id=487, 532.389pt x 677.8926pt>
+File: images/image-based_neigh.png Graphic file (type png)
+<use images/image-based_neigh.png>
+Package pdftex.def Info: images/image-based_neigh.png  used on input line 544.
+(pdftex.def)             Requested size: 390.0pt x 496.59525pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 549.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./images/limesharpcolor_neighborhood.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./images/image-based_neigh.png (PNG copy)>]
+<images/limesharpR_neighborhood.png, id=502, 924.45375pt x 580.1675pt>
+File: images/limesharpR_neighborhood.png Graphic file (type png)
+<use images/limesharpR_neighborhood.png>
+Package pdftex.def Info: images/limesharpR_neighborhood.png  used on input line
+ 575.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 592.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 592.
+
+
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34 <./images/limesharpR_neighborhood.png>]
+<images/limesharpC_neighborhood.png, id=513, 924.45375pt x 580.1675pt>
+File: images/limesharpC_neighborhood.png Graphic file (type png)
+<use images/limesharpC_neighborhood.png>
+Package pdftex.def Info: images/limesharpC_neighborhood.png  used on input line
+ 616.
+(pdftex.def)             Requested size: 331.50238pt x 208.04568pt.
+<images/limesharpC_same_clus.png, id=514, 934.49126pt x 362.35374pt>
+File: images/limesharpC_same_clus.png Graphic file (type png)
+<use images/limesharpC_same_clus.png>
+Package pdftex.def Info: images/limesharpC_same_clus.png  used on input line 62
+3.
+(pdftex.def)             Requested size: 390.0pt x 151.22548pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 646.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36 <./images/limesharpC_neighborhood.png> <./images/limesharpC_same_clus.png>]
+<images/undersamp-orig.png, id=535, 261.97874pt x 252.945pt>
+File: images/undersamp-orig.png Graphic file (type png)
+<use images/undersamp-orig.png>
+Package pdftex.def Info: images/undersamp-orig.png  used on input line 677.
+(pdftex.def)             Requested size: 191.10214pt x 184.51709pt.
+<images/undersamp-und.png, id=536, 248.93pt x 252.945pt>
+File: images/undersamp-und.png Graphic file (type png)
+<use images/undersamp-und.png>
+Package pdftex.def Info: images/undersamp-und.png  used on input line 682.
+(pdftex.def)             Requested size: 181.34857pt x 184.27779pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./images/undersamp-orig.png> <./images/undersamp-und.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 738.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]
+Chapter 5.
+[41
+
+]
+<images/paper-images/inception-v1.png, id=591, 483.8075pt x 391.4625pt>
+File: images/paper-images/inception-v1.png Graphic file (type png)
+<use images/paper-images/inception-v1.png>
+Package pdftex.def Info: images/paper-images/inception-v1.png  used on input li
+ne 791.
+(pdftex.def)             Requested size: 181.54645pt x 146.89365pt.
+<images/paper-images/inception-v3.png, id=594, 472.76625pt x 464.73625pt>
+File: images/paper-images/inception-v3.png Graphic file (type png)
+<use images/paper-images/inception-v3.png>
+Package pdftex.def Info: images/paper-images/inception-v3.png  used on input li
+ne 796.
+(pdftex.def)             Requested size: 181.54645pt x 178.46661pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./images/paper-images/inception-v1.png> <./images/paper-images/inception-v
+3.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 820.
+
+
+Overfull \hbox (2.4442pt too wide) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/12 tobacco[]shop| 
+ []
+
+
+Overfull \hbox (2.61818pt too wide) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/12 mountain[]bike| 
+ []
+
+
+Overfull \hbox (2.37892pt too wide) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/12 digital[]watch| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--837
+[]|\OT1/cmr/m/n/12 bicycle-built-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+<images/original.JPEG, id=625, 501.875pt x 376.40625pt>
+File: images/original.JPEG Graphic file (type jpg)
+<use images/original.JPEG>
+Package pdftex.def Info: images/original.JPEG  used on input line 856.
+(pdftex.def)             Requested size: 191.10214pt x 143.32877pt.
+<images/ground_truth.jpg, id=626, 501.875pt x 376.40625pt>
+File: images/ground_truth.jpg Graphic file (type jpg)
+<use images/ground_truth.jpg>
+Package pdftex.def Info: images/ground_truth.jpg  used on input line 861.
+(pdftex.def)             Requested size: 191.10214pt x 143.32877pt.
+<images/measures.png, id=631, 282.05376pt x 282.05376pt>
+File: images/measures.png Graphic file (type png)
+<use images/measures.png>
+Package pdftex.def Info: images/measures.png  used on input line 875.
+(pdftex.def)             Requested size: 195.0pt x 195.00032pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./images/original.JPEG> <./images/ground_truth.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./images/measures.png>]
+<images/figs/lime-sharp-gray-all.png, id=650, 1084.05pt x 361.35pt>
+File: images/figs/lime-sharp-gray-all.png Graphic file (type png)
+<use images/figs/lime-sharp-gray-all.png>
+Package pdftex.def Info: images/figs/lime-sharp-gray-all.png  used on input lin
+e 941.
+(pdftex.def)             Requested size: 429.00238pt x 142.9991pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./images/figs/lime-sharp-gray-all.png>]
+<images/figs/lime-sharp-color-all.png, id=667, 1084.05pt x 361.35pt>
+File: images/figs/lime-sharp-color-all.png Graphic file (type png)
+<use images/figs/lime-sharp-color-all.png>
+Package pdftex.def Info: images/figs/lime-sharp-color-all.png  used on input li
+ne 969.
+(pdftex.def)             Requested size: 429.00238pt x 142.9991pt.
+
+Underfull \vbox (badness 2165) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./images/figs/lime-sharp-color-all.png>]
+<images/figs/lime-sharp-R-all.png, id=681, 1084.05pt x 361.35pt>
+File: images/figs/lime-sharp-R-all.png Graphic file (type png)
+<use images/figs/lime-sharp-R-all.png>
+Package pdftex.def Info: images/figs/lime-sharp-R-all.png  used on input line 9
+92.
+(pdftex.def)             Requested size: 429.00238pt x 142.9991pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50 <./images/figs/lime-sharp-R-all.png>]
+Overfull \hbox (17.41756pt too wide) in paragraph at lines 1010--1010
+[][][]\OT1/cmr/m/n/10 http://scikit-learn.org/stable/modules/generated/sklearn.
+cluster.SpectralClustering.html| 
+ []
+
+<images/spectral_silhouette.png, id=694, 409.53pt x 301.125pt>
+File: images/spectral_silhouette.png Graphic file (type png)
+<use images/spectral_silhouette.png>
+Package pdftex.def Info: images/spectral_silhouette.png  used on input line 101
+4.
+(pdftex.def)             Requested size: 312.00119pt x 229.42712pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51 <./images/spectral_silhouette.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+<images/figs/lime-sharp-C-all.png, id=711, 1084.05pt x 361.35pt>
+File: images/figs/lime-sharp-C-all.png Graphic file (type png)
+<use images/figs/lime-sharp-C-all.png>
+Package pdftex.def Info: images/figs/lime-sharp-C-all.png  used on input line 1
+045.
+(pdftex.def)             Requested size: 429.00238pt x 142.9991pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53 <./images/figs/lime-sharp-C-all.png>]
+<images/figs/R-C-comparison.png, id=721, 1047.915pt x 224.84pt>
+File: images/figs/R-C-comparison.png Graphic file (type png)
+<use images/figs/R-C-comparison.png>
+Package pdftex.def Info: images/figs/R-C-comparison.png  used on input line 105
+6.
+(pdftex.def)             Requested size: 429.00238pt x 92.04433pt.
+
+Overfull \hbox (19.01085pt too wide) in alignment at lines 1090--1090
+[][][][][][][][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54 <./images/figs/R-C-comparison.png>]
+Overfull \hbox (19.89099pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Overfull \hbox (19.78229pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Overfull \hbox (26.42548pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Overfull \hbox (28.14618pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Overfull \hbox (14.8427pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Overfull \hbox (14.65947pt too wide) in paragraph at lines 1114--1114
+[]|[]| 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+Chapter 6.
+[57
+
+] (./master_thesis.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58] [59
+
+]
+Underfull \hbox (badness 1122) in paragraph at lines 83--86
+[]\OT1/cmr/m/n/12 B. Zhou, A. Khosla, []A. Lapedriza, A. Oliva, and A. Tor-ralb
+a,
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 83--86
+\OT1/cmr/m/n/12 ``Learn-ing deep fea-tures for dis-crim-i-na-tive lo-cal-iza-ti
+on,'' \OT1/cmr/m/it/12 CoRR\OT1/cmr/m/n/12 ,
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+Underfull \hbox (badness 1571) in paragraph at lines 111--114
+\OT1/cmr/m/n/12 two-level boolean rule learn-ing for clas-si-fi-ca-tion,'' \OT1
+/cmr/m/it/12 arXiv preprint
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63] [64
+
+]
+Appendix A.
+<images/figs/VSGRID/limesharp gray/limesharp gray: precision vs grid size.png, 
+id=792, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp gray/limesharp gray: precision vs grid size.
+png Graphic file (type png)
+<use images/figs/VSGRID/limesharp gray/limesharp gray: precision vs grid size.p
+ng>
+Package pdftex.def Info: images/figs/VSGRID/limesharp gray/limesharp gray: prec
+ision vs grid size.png  used on input line 1162.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharp gray/limesharp gray: recall vs grid size.png, id=
+793, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp gray/limesharp gray: recall vs grid size.png
+ Graphic file (type png)
+<use images/figs/VSGRID/limesharp gray/limesharp gray: recall vs grid size.png>
+
+Package pdftex.def Info: images/figs/VSGRID/limesharp gray/limesharp gray: reca
+ll vs grid size.png  used on input line 1167.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharp gray/limesharp gray: f-measure vs grid size.png, 
+id=794, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp gray/limesharp gray: f-measure vs grid size.
+png Graphic file (type png)
+<use images/figs/VSGRID/limesharp gray/limesharp gray: f-measure vs grid size.p
+ng>
+Package pdftex.def Info: images/figs/VSGRID/limesharp gray/limesharp gray: f-me
+asure vs grid size.png  used on input line 1172.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65
+
+]
+<images/figs/VSGRID/limesharp color/limesharp color: precision vs grid size.png
+, id=799, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp color/limesharp color: precision vs grid siz
+e.png Graphic file (type png)
+<use images/figs/VSGRID/limesharp color/limesharp color: precision vs grid size
+.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharp color/limesharp color: pr
+ecision vs grid size.png  used on input line 1186.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharp color/limesharp color: recall vs grid size.png, i
+d=800, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp color/limesharp color: recall vs grid size.p
+ng Graphic file (type png)
+<use images/figs/VSGRID/limesharp color/limesharp color: recall vs grid size.pn
+g>
+Package pdftex.def Info: images/figs/VSGRID/limesharp color/limesharp color: re
+call vs grid size.png  used on input line 1191.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharp color/limesharp color: f-measure vs grid size.png
+, id=801, 939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharp color/limesharp color: f-measure vs grid siz
+e.png Graphic file (type png)
+<use images/figs/VSGRID/limesharp color/limesharp color: f-measure vs grid size
+.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharp color/limesharp color: f-
+measure vs grid size.png  used on input line 1196.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/figs/VSGRID/limesharpR/limesharpR: precision vs grid size.png, id=802, 
+939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpR/limesharpR: precision vs grid size.png Grap
+hic file (type png)
+<use images/figs/VSGRID/limesharpR/limesharpR: precision vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpR/limesharpR: precision vs
+ grid size.png  used on input line 1210.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharpR/limesharpR: recall vs grid size.png, id=803, 939
+.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpR/limesharpR: recall vs grid size.png Graphic
+ file (type png)
+<use images/figs/VSGRID/limesharpR/limesharpR: recall vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpR/limesharpR: recall vs gr
+id size.png  used on input line 1215.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharpR/limesharpR: f-measure vs grid size.png, id=804, 
+939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpR/limesharpR: f-measure vs grid size.png Grap
+hic file (type png)
+<use images/figs/VSGRID/limesharpR/limesharpR: f-measure vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpR/limesharpR: f-measure vs
+ grid size.png  used on input line 1220.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/purity/4by4.png, id=805, 969.6225pt x 333.245pt>
+File: images/purity/4by4.png Graphic file (type png)
+<use images/purity/4by4.png>
+Package pdftex.def Info: images/purity/4by4.png  used on input line 1235.
+(pdftex.def)             Requested size: 390.0pt x 134.03802pt.
+<images/purity/8by8.png, id=806, 960.58875pt x 333.245pt>
+File: images/purity/8by8.png Graphic file (type png)
+<use images/purity/8by8.png>
+Package pdftex.def Info: images/purity/8by8.png  used on input line 1241.
+(pdftex.def)             Requested size: 390.0pt x 135.29907pt.
+<images/purity/16by16.png, id=807, 960.58875pt x 333.245pt>
+File: images/purity/16by16.png Graphic file (type png)
+<use images/purity/16by16.png>
+Package pdftex.def Info: images/purity/16by16.png  used on input line 1247.
+(pdftex.def)             Requested size: 390.0pt x 135.29907pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/purity/32by32.png, id=808, 960.58875pt x 333.245pt>
+File: images/purity/32by32.png Graphic file (type png)
+<use images/purity/32by32.png>
+Package pdftex.def Info: images/purity/32by32.png  used on input line 1256.
+(pdftex.def)             Requested size: 390.0pt x 135.29907pt.
+<images/purity/64by64.png, id=809, 960.58875pt x 333.245pt>
+File: images/purity/64by64.png Graphic file (type png)
+<use images/purity/64by64.png>
+Package pdftex.def Info: images/purity/64by64.png  used on input line 1263.
+(pdftex.def)             Requested size: 390.0pt x 135.29907pt.
+<images/figs/VSGRID/limesharpC/limesharpC: precision vs grid size.png, id=810, 
+939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpC/limesharpC: precision vs grid size.png Grap
+hic file (type png)
+<use images/figs/VSGRID/limesharpC/limesharpC: precision vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpC/limesharpC: precision vs
+ grid size.png  used on input line 1274.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharpC/limesharpC: recall vs grid size.png, id=811, 939
+.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpC/limesharpC: recall vs grid size.png Graphic
+ file (type png)
+<use images/figs/VSGRID/limesharpC/limesharpC: recall vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpC/limesharpC: recall vs gr
+id size.png  used on input line 1279.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+<images/figs/VSGRID/limesharpC/limesharpC: f-measure vs grid size.png, id=812, 
+939.51pt x 361.35pt>
+File: images/figs/VSGRID/limesharpC/limesharpC: f-measure vs grid size.png Grap
+hic file (type png)
+<use images/figs/VSGRID/limesharpC/limesharpC: f-measure vs grid size.png>
+Package pdftex.def Info: images/figs/VSGRID/limesharpC/limesharpC: f-measure vs
+ grid size.png  used on input line 1284.
+(pdftex.def)             Requested size: 390.0pt x 149.99605pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (14.51112pt too wide) in alignment at lines 1312--1312
+[][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.92528pt too wide) in paragraph at lines 1333--1333
+[]|[]| 
+ []
+
+
+Overfull \hbox (8.64598pt too wide) in paragraph at lines 1333--1333
+[]|[]| 
+ []
+
+
+Overfull \hbox (14.51112pt too wide) in alignment at lines 1355--1355
+[][][][][][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.92528pt too wide) in paragraph at lines 1376--1376
+[]|[]| 
+ []
+
+
+Overfull \hbox (8.64598pt too wide) in paragraph at lines 1376--1376
+[]|[]| 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1381.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68 <./images/figs/VSGRID/limesharp gray/limesharp gray: precision vs grid size
+.png> <./images/figs/VSGRID/limesharp gray/limesharp gray: recall vs grid size.
+png> <./images/figs/VSGRID/limesharp gray/limesharp gray: f-measure vs grid siz
+e.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69 <./images/figs/VSGRID/limesharp color/limesharp color: precision vs grid si
+ze.png> <./images/figs/VSGRID/limesharp color/limesharp color: recall vs grid s
+ize.png> <./images/figs/VSGRID/limesharp color/limesharp color: f-measure vs gr
+id size.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70 <./images/figs/VSGRID/limesharpR/limesharpR: precision vs grid size.png> <.
+/images/figs/VSGRID/limesharpR/limesharpR: recall vs grid size.png> <./images/f
+igs/VSGRID/limesharpR/limesharpR: f-measure vs grid size.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71 <./images/purity/4by4.png> <./images/purity/8by8.png> <./images/purity/16by
+16.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72 <./images/purity/32by32.png> <./images/purity/64by64.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73 <./images/figs/VSGRID/limesharpC/limesharpC: precision vs grid size.png> <.
+/images/figs/VSGRID/limesharpC/limesharpC: recall vs grid size.png> <./images/f
+igs/VSGRID/limesharpC/limesharpC: f-measure vs grid size.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1381.
+
+(./master_thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1381.
+
+Package rerunfilecheck Info: File `master_thesis.out' has not changed.
+(rerunfilecheck)             Checksum: DC416F365E72ABC75337ADBE3008A821;1941.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 11552 strings out of 494871
+ 178497 string characters out of 6179252
+ 419430 words of memory out of 5000000
+ 14496 multiletter control sequences out of 15000+600000
+ 19417 words of font info for 73 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 37i,18n,43p,956b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on master_thesis.pdf (73 pages, 8515216 bytes).
+PDF statistics:
+ 978 PDF objects out of 1000 (max. 8388607)
+ 773 compressed objects within 8 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+

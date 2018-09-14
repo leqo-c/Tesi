@@ -1,0 +1,30 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Related work}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Image Captioning}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Explanation via Saliency Masks}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Alternative image data representations}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Comparison with the state of the art}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{Background: LIME}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Explaning the predictions}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{The need for interpretability and fidelity}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Generation of the neighborhood}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.4}{Gaining insights about wrong predictions}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Proposed approach}{}% 12
+\BOOKMARK [1][-]{section.4.1}{LIME}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{LIME\043}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.3}{Image-based neighborhood approaches}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.3.1}{LIME\043R}{section.4.3}% 16
+\BOOKMARK [2][-]{subsection.4.3.2}{LIME\043C}{section.4.3}% 17
+\BOOKMARK [0][-]{chapter.5}{Experiments}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Black box model}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Dataset}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.2.1}{Definition of reference area}{section.5.2}% 21
+\BOOKMARK [1][-]{section.5.3}{Evaluation}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.4}{Results}{chapter.5}% 23
+\BOOKMARK [2][-]{subsection.5.4.1}{LIME\043 gray}{section.5.4}% 24
+\BOOKMARK [2][-]{subsection.5.4.2}{LIME\043 color}{section.5.4}% 25
+\BOOKMARK [2][-]{subsection.5.4.3}{LIME\043R}{section.5.4}% 26
+\BOOKMARK [2][-]{subsection.5.4.4}{LIME\043C}{section.5.4}% 27
+\BOOKMARK [1][-]{section.5.5}{Overall comparison}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Conclusions and future works}{}% 29
+\BOOKMARK [0][-]{appendix.A}{Experiments results}{}% 30

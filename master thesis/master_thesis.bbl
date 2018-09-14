@@ -1,0 +1,216 @@
+\begin{thebibliography}{10}
+
+\bibitem{ilsvrc}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei, ``{ImageNet
+  Large Scale Visual Recognition Challenge},'' {\em International Journal of
+  Computer Vision (IJCV)}, vol.~115, no.~3, pp.~211--252, 2015.
+
+\bibitem{inception-v1}
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
+  V.~Vanhoucke, and A.~Rabinovich, ``Going deeper with convolutions,'' in {\em
+  Proceedings of the IEEE conference on computer vision and pattern
+  recognition}, pp.~1--9, 2015.
+
+\bibitem{inception-v3}
+C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, and Z.~Wojna, ``Rethinking the
+  inception architecture for computer vision,'' in {\em Proceedings of the IEEE
+  conference on computer vision and pattern recognition}, pp.~2818--2826, 2016.
+
+\bibitem{healthcare}
+R.~Caruana, Y.~Lou, J.~Gehrke, P.~Koch, M.~Sturm, and N.~Elhadad,
+  ``Intelligible models for healthcare: Predicting pneumonia risk and hospital
+  30-day readmission,'' in {\em Proceedings of the 21th ACM SIGKDD
+  International Conference on Knowledge Discovery and Data Mining}, KDD '15,
+  (New York, NY, USA), pp.~1721--1730, ACM, 2015.
+
+\bibitem{quickshift}
+A.~Vedaldi and S.~Soatto, ``Quick shift and kernel methods for mode seeking,''
+  in {\em Computer Vision -- ECCV 2008} (D.~Forsyth, P.~Torr, and A.~Zisserman,
+  eds.), (Berlin, Heidelberg), pp.~705--718, Springer Berlin Heidelberg, 2008.
+
+\bibitem{meanshift}
+D.~Comaniciu and P.~Meer, ``Mean shift: A robust approach toward feature space
+  analysis,'' {\em IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, vol.~24, pp.~603--619, 2002.
+
+\bibitem{lore}
+R.~Guidotti, A.~Monreale, S.~Ruggieri, D.~Pedreschi, F.~Turini, and
+  F.~Giannotti, ``Local rule-based explanations of black box decision
+  systems,'' {\em arXiv preprint arXiv:1805.10820}, 2018.
+
+\bibitem{lime}
+M.~T. Ribeiro, S.~Singh, and C.~Guestrin, ``"why should {I} trust you?":
+  Explaining the predictions of any classifier,'' {\em CoRR},
+  vol.~abs/1602.04938, 2016.
+
+\bibitem{gradcam}
+R.~R. Selvaraju, A.~Das, R.~Vedantam, M.~Cogswell, D.~Parikh, and D.~Batra,
+  ``Grad-cam: Why did you say that? visual explanations from deep networks via
+  gradient-based localization,'' {\em CoRR}, vol.~abs/1610.02391, 2016.
+
+\bibitem{interpretable-convnets}
+Q.~Zhang, Y.~N. Wu, and S.-C. Zhu, ``Interpretable convolutional neural
+  networks,'' {\em arXiv preprint arXiv:1710.00935}, vol.~2, no.~3, p.~5, 2017.
+
+\bibitem{neural-attention}
+J.~Zhang, Z.~Lin, J.~Brandt, X.~Shen, and S.~Sclaroff, ``Top-down neural
+  attention by excitation backprop,'' {\em CoRR}, vol.~abs/1608.00507, 2016.
+
+\bibitem{fong}
+R.~Fong and A.~Vedaldi, ``Interpretable explanations of black boxes by
+  meaningful perturbation,'' {\em CoRR}, vol.~abs/1704.03296, 2017.
+
+\bibitem{survey}
+R.~Guidotti, A.~Monreale, F.~Turini, D.~Pedreschi, and F.~Giannotti, ``A survey
+  of methods for explaining black box models,'' {\em CoRR},
+  vol.~abs/1802.01933, 2018.
+
+\bibitem{obj-detectors}
+B.~Zhou, A.~Khosla, A.~Lapedriza, A.~Oliva, and A.~Torralba, ``Object detectors
+  emerge in deep scene cnns,'' {\em arXiv preprint arXiv:1412.6856}, 2014.
+
+\bibitem{a-model-explanation}
+R.~{Turner}, ``{A Model Explanation System: Latest Updates and Extensions},''
+  {\em ArXiv e-prints}, June 2016.
+
+\bibitem{nothing-else-matters}
+M.~{Tulio Ribeiro}, S.~{Singh}, and C.~{Guestrin}, ``{Nothing Else Matters:
+  Model-Agnostic Explanations By Identifying Prediction Invariance},'' {\em
+  ArXiv e-prints}, Nov. 2016.
+
+\bibitem{zhou}
+B.~Zhou, A.~Khosla, {\`{A}}.~Lapedriza, A.~Oliva, and A.~Torralba, ``Learning
+  deep features for discriminative localization,'' {\em CoRR},
+  vol.~abs/1512.04150, pp.~2921--2929, 2015.
+
+\bibitem{global1}
+M.~Craven and J.~W. Shavlik, ``Extracting tree-structured representations of
+  trained networks,'' in {\em Advances in neural information processing
+  systems}, pp.~24--30, 1996.
+
+\bibitem{global2}
+O.~Boz, ``Extracting decision trees from trained neural networks,'' in {\em
+  Proceedings of the eighth ACM SIGKDD international conference on Knowledge
+  discovery and data mining}, pp.~456--461, ACM, 2002.
+
+\bibitem{global3}
+H.~Chipman, E.~George, and R.~McCulloh, ``Making sense of a forest of trees,''
+  {\em Computing Science and Statistics}, pp.~84--92, 1998.
+
+\bibitem{transparent1}
+F.~Wang and C.~Rudin, ``Falling rule lists,'' in {\em Artificial Intelligence
+  and Statistics}, pp.~1013--1022, 2015.
+
+\bibitem{transparent2}
+J.~Yoon and D.-W. Kim, ``Classification based on predictive association rules
+  of incomplete data,'' {\em IEICE TRANSACTIONS on Information and Systems},
+  vol.~95, no.~5, pp.~1531--1535, 2012.
+
+\bibitem{transparent3}
+G.~Su, D.~Wei, K.~R. Varshney, and D.~M. Malioutov, ``Interpretable two-level
+  boolean rule learning for classification,'' {\em arXiv preprint
+  arXiv:1511.07361}, 2015.
+
+\bibitem{neural_pred}
+T.~Lei, R.~Barzilay, and T.~Jaakkola, ``Rationalizing neural predictions,''
+  {\em arXiv preprint arXiv:1606.04155}, 2016.
+
+\bibitem{bag-of-pixels}
+T.~Jebara, ``Images as bags of pixels,'' in {\em Proceedings of the Ninth IEEE
+  International Conference on Computer Vision - Volume 2}, ICCV '03,
+  (Washington, DC, USA), pp.~265--272, IEEE Computer Society, 2003.
+
+\bibitem{bag-of-keypoints}
+G.~Csurka, C.~Dance, L.~Fan, J.~Willamowski, and C.~Bray, ``Visual
+  categorization with bags of keypoints,'' in {\em Workshop on statistical
+  learning in computer vision, ECCV}, vol.~1, pp.~1--2, Prague, 2004.
+
+\bibitem{yang-visual-words}
+J.~Yang, Y.-G. Jiang, A.~G. Hauptmann, and C.-W. Ngo, ``Evaluating
+  bag-of-visual-words representations in scene classification,'' in {\em
+  Proceedings of the international workshop on Workshop on multimedia
+  information retrieval}, pp.~197--206, ACM, 2007.
+
+\bibitem{yang2-visual-words}
+Y.~Yang and S.~Newsam, ``Bag-of-visual-words and spatial extensions for
+  land-use classification,'' in {\em Proceedings of the 18th SIGSPATIAL
+  international conference on advances in geographic information systems},
+  pp.~270--279, ACM, 2010.
+
+\bibitem{visual-word-reconstruction}
+H.~Kato and T.~Harada, ``Image reconstruction from bag-of-visual-words,'' in
+  {\em Proceedings of the IEEE conference on computer vision and pattern
+  recognition}, pp.~955--962, 2014.
+
+\bibitem{old-visual-words}
+S.~A. Chatzichristofis, C.~Iakovidou, Y.~Boutalis, and O.~Marques, ``Co. vi.
+  wo.: color visual words based on non-predefined size codebooks,'' {\em IEEE
+  transactions on cybernetics}, vol.~43, no.~1, pp.~192--205, 2013.
+
+\bibitem{visual-bag-of-words}
+Z.~Lu, L.~Wang, and J.~Wen, ``Image classification by visual bag-of-words
+  refinement and reduction,'' {\em CoRR}, vol.~abs/1501.04292, pp.~197--206,
+  2015.
+
+\bibitem{sift}
+D.~G. Lowe, ``Object recognition from local scale-invariant features,'' in {\em
+  Computer vision, 1999. The proceedings of the seventh IEEE international
+  conference on}, vol.~2, pp.~1150--1157, Ieee, 1999.
+
+\bibitem{show-and-tell}
+O.~Vinyals, A.~Toshev, S.~Bengio, and D.~Erhan, ``Show and tell: Lessons
+  learned from the 2015 {MSCOCO} image captioning challenge,'' {\em CoRR},
+  vol.~abs/1609.06647, pp.~3156--3164, 2016.
+
+\bibitem{show_attend_and_tell}
+K.~Xu, J.~Ba, R.~Kiros, K.~Cho, A.~C. Courville, R.~Salakhutdinov, R.~S. Zemel,
+  and Y.~Bengio, ``Show, attend and tell: Neural image caption generation with
+  visual attention,'' {\em CoRR}, vol.~abs/1502.03044, pp.~2048--2057, 2015.
+
+\bibitem{inspection1}
+J.~Krause, A.~Perer, and K.~Ng, ``Interacting with predictions: Visual
+  inspection of black-box machine learning models,'' in {\em Proceedings of the
+  2016 CHI Conference on Human Factors in Computing Systems}, pp.~5686--5697,
+  ACM, 2016.
+
+\bibitem{inspection2}
+P.~Cortez and M.~J. Embrechts, ``Using sensitivity analysis and visualization
+  techniques to open black box data mining models,'' {\em Information
+  Sciences}, vol.~225, pp.~1--17, 2013.
+
+\bibitem{huysmans}
+J.~Huysmans, K.~Dejaeger, C.~Mues, J.~Vanthienen, and B.~Baesens, ``An
+  empirical evaluation of the comprehensibility of decision table, tree and
+  rule based predictive models,'' {\em Decision Support Systems}, vol.~51,
+  no.~1, pp.~141--154, 2011.
+
+\bibitem{real_time_image_saliency}
+P.~Dabkowski and Y.~Gal, ``Real time image saliency for black box
+  classifiers,'' in {\em Advances in Neural Information Processing Systems 30}
+  (I.~Guyon, U.~V. Luxburg, S.~Bengio, H.~Wallach, R.~Fergus, S.~Vishwanathan,
+  and R.~Garnett, eds.), pp.~6967--6976, Curran Associates, Inc., 2017.
+
+\bibitem{k-means}
+J.~MacQueen {\em et~al.}, ``Some methods for classification and analysis of
+  multivariate observations,'' in {\em Proceedings of the fifth Berkeley
+  symposium on mathematical statistics and probability}, vol.~1, pp.~281--297,
+  Oakland, CA, USA, 1967.
+
+\bibitem{on-spectral-clus}
+A.~Y. Ng, M.~I. Jordan, and Y.~Weiss, ``On spectral clustering: Analysis and an
+  algorithm,'' in {\em Proceedings of the 14th International Conference on
+  Neural Information Processing Systems: Natural and Synthetic}, NIPS'01,
+  (Cambridge, MA, USA), pp.~849--856, MIT Press, 2001.
+
+\bibitem{spectral-tutorial}
+U.~V. Luxburg, ``A tutorial on spectral clustering,'' in {\em Statistics and
+  Computing}, vol.~17, pp.~395--416, 2007.
+
+\bibitem{spectral_clustering}
+M.~Somashekara and D.~Manjunatha, ``Performance evaluation of spectral
+  clustering algorithm using various clustering validity indices,'' {\em
+  International Journal of Electronics Communication and Computer Engineering},
+  vol.~5, no.~6, pp.~1274--1276, 2014.
+
+\end{thebibliography}
