@@ -1,34 +1,34 @@
-\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
-\contentsline {chapter}{\numberline {2}Related work}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Image Captioning}{10}{section.2.1}
-\contentsline {section}{\numberline {2.2}Explanation via Saliency Masks}{12}{section.2.2}
-\contentsline {section}{\numberline {2.3}Alternative image data representations}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}Comparison with the state of the art}{17}{section.2.4}
-\contentsline {chapter}{\numberline {3}Background: LIME}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Explaning the predictions}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}The need for interpretability and fidelity}{21}{section.3.2}
-\contentsline {section}{\numberline {3.3}Generation of the neighborhood}{22}{section.3.3}
-\contentsline {section}{\numberline {3.4}Gaining insights about wrong predictions}{25}{section.3.4}
-\contentsline {chapter}{\numberline {4}Proposed approach}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}LIME}{28}{section.4.1}
-\contentsline {section}{\numberline {4.2}LIME$\#$}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Image-based neighborhood approaches}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}LIME$\#$R}{32}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}LIME$\#$C}{35}{subsection.4.3.2}
-\contentsline {subsubsection}{Definition of \textit {Clustering Purity}}{37}{section*.18}
-\contentsline {subsubsection}{Clustering algorithm}{37}{section*.20}
-\contentsline {chapter}{\numberline {5}Experiments}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Black box model}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Dataset}{43}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definition of \textit {reference area}}{44}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Evaluation}{45}{section.5.3}
-\contentsline {section}{\numberline {5.4}Results}{47}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}LIME\# gray}{47}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}LIME\# color}{49}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}LIME\#R}{50}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}LIME\#C}{51}{subsection.5.4.4}
-\contentsline {subsubsection}{Choice of the clustering algorithm}{51}{section*.31}
-\contentsline {subsubsection}{Explanation performances}{53}{section*.33}
-\contentsline {section}{\numberline {5.5}Overall comparison}{54}{section.5.5}
-\contentsline {chapter}{\numberline {6}Conclusions and future works}{57}{chapter.6}
-\contentsline {chapter}{\numberline {A}Experiments results}{65}{appendix.A}
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}Related work}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Image Captioning}{14}{section.2.1}
+\contentsline {section}{\numberline {2.2}Explanation via Saliency Masks}{16}{section.2.2}
+\contentsline {section}{\numberline {2.3}Alternative image data representations}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}Comparison with the state of the art}{21}{section.2.4}
+\contentsline {chapter}{\numberline {3}Background: LIME}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Explaining the predictions}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}The need for interpretability and fidelity}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Generation of the neighborhood}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gaining insights about wrong predictions}{29}{section.3.4}
+\contentsline {chapter}{\numberline {4}Proposed approach}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}LIME}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}LIME$\#$}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Image-based neighborhood approaches}{35}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}LIME$\#$R}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}LIME$\#$C}{38}{subsection.4.3.2}
+\contentsline {subsubsection}{Definition of \textit {Clustering Purity}}{40}{section*.20}
+\contentsline {subsubsection}{Clustering algorithm}{41}{section*.22}
+\contentsline {chapter}{\numberline {5}Experiments}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Black box model}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Dataset}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definition of \textit {reference area}}{48}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Evaluation}{49}{section.5.3}
+\contentsline {section}{\numberline {5.4}Results}{51}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}LIME\# gray}{51}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}LIME\# color}{53}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}LIME\#R}{53}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}LIME\#C}{54}{subsection.5.4.4}
+\contentsline {subsubsection}{Choice of the clustering algorithm}{55}{section*.33}
+\contentsline {subsubsection}{Explanation performances}{56}{section*.35}
+\contentsline {section}{\numberline {5.5}Overall comparison}{59}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{61}{chapter.6}
+\contentsline {chapter}{\numberline {A}Experiments results}{69}{appendix.A}

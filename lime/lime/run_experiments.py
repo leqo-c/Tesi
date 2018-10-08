@@ -164,6 +164,33 @@ elif lime_version == 'lime#C':
     
     del images
 # ---------------------------------------------------------------------------------------------
+    
+# Testing Lime#RC -----------------------------------------------------------------------------
+elif lime_version == 'lime#RC':
+    ks_for_each_grid_size = [20,17,16,26,18]
+    images = clustering.load_images(imgs_clustering)
+    
+    for k,g in zip(ks_for_each_grid_size, grid_sizes):
+        und = clustering.undersample_images(images, g)
+        flattened = clustering.flatten_images(und)
+        inertia, lbls, centers = clustering.k_means(flattened, k)
+        
+        qualities = evaluation_measures.evaluate_explanations(
+                                              'lime#RC',
+                                              model,
+                                              bb_outcomes,
+                                              imgs,
+                                              gts,
+                                              neigh_size=100,
+                                              segmentation_fun=partial(gridSegmentation,g),
+                                              clustering_labels=lbls,
+                                              image_pool=imgs)
+
+        filename = "exp_results/%s_gridsize=%s_neighsize=200" % (lime_version, g)
+        np.save(filename, qualities)
+    
+    del images
+# ---------------------------------------------------------------------------------------------
 
 else:
     print("Unsupported explainer type")

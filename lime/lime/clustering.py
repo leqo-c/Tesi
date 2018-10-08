@@ -107,8 +107,8 @@ def load_images(paths_of_images):
 
 def flatten_images(images):
     img_array = []
-    for im in images:
-        img_array.append(np.float32(im).ravel())
+    for i in range(len(images)):
+        img_array.append(np.float32(images[i]).ravel())
     return np.vstack(img_array)
 
 def prepare_images_for_kmeans(paths_of_images):

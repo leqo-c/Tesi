@@ -1,3 +1,4 @@
+%!TEX encoding = UTF-8 Unicode
 \documentclass[12pt, twoside, a4paper]{report}
 
 % To format double quotes in the right way
@@ -6,6 +7,8 @@
 
 \usepackage{algorithm2e}% http://ctan.org/pkg/algorithms
 \usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+
+\usepackage[utf8]{inputenc}
 
 \usepackage{cite}
 \usepackage{fancyhdr}
@@ -35,7 +38,9 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.01pt}
 \fancyhead[LE,RO]{\thepage}
-\fancyhead[RE,LO]{\leftmark}
+\fancyhead[LO]{\leftmark}
+%\fancyhead[RE,LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
 %\fancyfoot[CE,CO]{\thepage}
 \newcommand{\whitepage}{\clearpage
 						\thispagestyle{empty}
@@ -52,22 +57,73 @@
 \sloppy
 \nocite{*}
 
+\newpage
 
+\chapter*{Ringraziamenti}
+
+\thispagestyle{empty}
+\footnotesize
+
+Vorrei ringraziare i miei relatori, Anna Monreale e Riccardo Guidotti, che hanno saputo fin da subito consigliarmi e farmi iniziare col piede giusto l'ultimo capitolo della mia carriera di studente universitario. Grazie della fiducia, della motivazione, dell'appoggio e dell'entusiasmo che mi avete sempre trasmesso durante l'ultimo semestre.
+
+Agli amici e compagni di gioco dello Star: grazie per gli innumerevoli sabati passati insieme, per le partite, per i confronti, le discussioni e le risate. La facilità e la naturalezza con la quale stringevamo amicizia mi riportava sempre indietro nel tempo. In ordine casuale ringrazio Fili, Michelangelo, Fla, Acco, Geno, F. Donati, Cacio, T. Conti, Ono, Topini, Mirko, E. Cassai, Crucio, Fonta, Bernini e tutti gli altri. 
+
+Grazie anche ai miei amici di lunga data, Uri, Ale e Boa, con i quali ho sempre passato (e passerò ancora) momenti di gioia e spensieratezza. Grazie Iulian, sei sempre rimasto lo stesso dai tempi della 3 INF: un amico sincero e vero.
+Grazie anche a tutti i miei amici di infanzia: in vostra compagnia ho trascorso molti dei migliori anni della mia vita.
+
+Grazie agli amici dell'università, compagni di corso e ai ragazzi del mio ufficio. 
+Grazie a te Tri, che mi hai dimostrato che, con un incessante impegno e una buona dose di volontà, si può anche girare il mondo alla nostra età. Grazie allo chef, a Qiong, a Vân, Anh, Helen, Lin e a tutti i tuoi amici per aver condiviso con me le vostre esperienze.
+
+Ai migliori coinquilini che potessi avere, Matteo, Gianluca e Andrea, voglio augurare il meglio: grazie per aver reso piacevole la mia permanenza a Pisa e per avermi insegnato tante cose.
+
+Grazie a Luciana, per la tua gentilezza e la tua semplicità e per aver reso una delle mie ultime sessioni estremamente più leggera e tranquilla. Abbiamo condiviso il nostro percorso di studio soltanto nell'ultimo semestre, ma mi auguro che continueremo a tenerci in contatto. 
+
+Un sincero grazie a Giulia, indubbiamente la persona più riconoscente e generosa che conosca: quelli che per te sono gesti naturali e spontanei hanno avuto e continuano ad avere per me un significato enorme. Grazie per il tempo che abbiamo condiviso, spero davvero che ci sarà ancora l'occasione di vederci o sentirci e di fare un viaggio nel tanto desiderato Giappone.
+
+Grazie dunque anche alla mia professoressa di giapponese, Yukari Saitō, che ha reso ancora più grande il mio interesse verso quest'affascinante lingua e mi ha appoggiato durante tutto il percorso.
+
+Grazie infine alla mia famiglia, che mi ha sempre sostenuto e ha reso possibile tutto questo.
+
+\whitepage
+\newpage
+
+\chapter*{Acknowledgements}
+\thispagestyle{empty}
+
+I would like to thank my supervisors, Anna Monreale and Riccardo Guidotti, who gave me suggestions and made me start the last chapter of my student's career in the best way. Thank you for your trust, motivation, help and enthusiasm.
+
+To the friends and mates of the Star: thank you for the countless Saturdays spent together, for the matches, the confrontations, the discussions and the funny moments. We became friends in such an easy and natural way that reminded me of the good old times. I would like to thank, in random order, Fili, Michelangelo, Fla, Acco, Geno, F. Donati, Cacio, T. Conti, Ono, Topini, Mirko, E. Cassai, Crucio, Fonta, Bernini and everyone else.
+
+Thanks to my friends Uri, Ale and Boa, with whom I always spent (and will spend) moments of happiness. Thank you Iulian, you have always stayed the same from the times of high school: a real and sincere friend. Thanks to all the friends of my childhood: with you I have spent many of the best years of my life. 
+
+Thanks to the friends I met at the university, classmates and office mates. Thank you Tri, because you showed me that, with enough self-confidence and will power, nothing can stop us from traveling around the world. Thanks to the chef, to Qiong, to Vân, Anh, Helen, Lin and all your friends for sharing your stories with me.
+
+To the best housemates ever, Matteo, Gianluca and Andrea, I would like to wish the best: thank you for the nice years spent in Pisa and for the things you taught me. 
+
+Thank you Luciana, for your kindness and simplicity and for making my last exam session extremely light and peaceful. We shared our studies just for the last semester, but I hope we will always keep in touch. 
+
+Thank you Giulia, you are unarguably the most grateful and generous person I know: all the actions and manners that you find normal meant and continue to mean a lot to me. Thank you for the time we shared, I really hope we will meet and keep in touch again and travel together to Japan.
+
+Also, I would like to thank my Japanese teacher Yukari Saitō, that made my interest for this fascinating language even bigger and always supported me during the whole program. 
+
+Finally I would like to thank my family, who always helped me and made everything possible.
+
+\whitepage
+\normalsize
 \tableofcontents
-
 
 \chapter{Introduction}
 
 In the last years, automated decision systems have been widely used in all those situations in which classification, recognition and prediction tasks were the main concern. All these systems exploit machine learning techniques to extract the possible relationships between what we give them as input and what we expect as output. Input variables can be of any type, as long as it is possible to find a convenient representation for them. For instance we can think of images as matrices of pixels or even as a set of features (that, intuitively, correspond to specific areas or patterns of the image). 
 
-In other cases, we may need to deal with data that somehow represent a collection of information about people, products or any other thing we can think of. This type of data falls under the category of tabular data. In addition, machine learning techniques can be applied to text data: in these situations, a convenient representation might be the frequency of words inside a document.
+In other cases, we may need to deal with data that somehow represent a collection of information about people, products or any other thing we can think of. This type of data is called tabular data. In addition, machine learning techniques can be applied to text data: in these situations, a convenient representation might be the frequency of words inside a document.
 
-We talk about "Black box" classifiers when dealing with classifiers having an opaque, hidden internal structure whose comprehension is not our main concern. What we are trying to understand in this work are, instead, the reasons that lead classifiers to make certain predictions. Models are built through the so-called learning phase, using large amounts of data as training instances. These might sometimes include sensible information such as credit card numbers, health status, locations and so on, so it is fundamental to ensure they are used properly to avoid any kind of discrimination and, in general, unfair usage. 
+We talk about "Black boxes" when dealing with classifiers having an opaque, hidden internal structure whose comprehension is not our main concern. What we are trying to understand in this work are, instead, the reasons that lead classifiers to make certain predictions. Models are built through the so-called learning phase, using large amounts of data as training instances. These might include sensible information such as credit card numbers, health status, locations and so on, so it is fundamental to ensure they are used properly to avoid any kind of discrimination and, in general, unfair usage. 
 
-On 25 May 2018, the Europen Parliament approved the \textit{General Data Protection Regulation} (GDPR) on data protection and privacy for all the citizens living in the European Union (EU) and the European Economic Area (EEA). It addresses the export of personal data outside the EU and EEA areas, giving people control over their personal data. On top of that, there are also restrictions and guidelines that companies (or any other organization holding personal data) are forced to follow: for instance, data must be stored using pseudonymization or full anonymization and use the highest-possible privacy settings by default, so that the data is not available publicly without explicit, informed consent, and cannot be used to identify a subject without additional information stored separately.
+On 25 May 2018, the European Parliament approved the \textit{General Data Protection Regulation} (GDPR) on data protection and privacy for all the citizens living in the European Union (EU) and the European Economic Area (EEA). It addresses the export of personal data outside the EU and EEA areas, giving people control over their personal data. On top of that, there are also restrictions and guidelines that companies (or any other organization holding personal data) are forced to follow: for instance, data must be stored using pseudonymization or full anonymization and use the highest-possible privacy settings by default, so that the data is not available publicly without explicit, informed consent, and cannot be used to identify a subject without additional information stored separately.
 An innovative aspect of the GDPR, which has been much debated, are the clauses on automated individual decision-making processes (prediction models in this case) which, for the first time, introduce a right of explanation for all individuals to obtain meaningful explanations of the logic involved when automated decision making takes place.
 
-Another reason why we are interested in explanations derives from the fact that we constantly use decision systems that we cannot understand. Typically, our main concern is the maximization of the model's performances (not caring at all about what happens under the hood). What can we do when we obtain relatively bad results and/or unexpected behaviours? Also, how can we prove that an image classifier built to recognize poisonous mushrooms actually focuses on the mushrooms themselves and not on the background?
+Another reason why we are interested in explanations derives from the fact that we constantly use decision systems that we cannot understand. Typically, our main concern is the maximization of the model's performances (not caring at all about what happens under the hood). What can we do when we obtain relatively bad results and/or unexpected behaviors? Also, how can we prove that an image classifier built to recognize poisonous mushrooms actually focuses on the mushrooms themselves and not on the background?
 If we take an \textit{Artificial Neural Network} (ANN) as an example, trying to understand the decision process is just hopeless (because what we have is just a huge set of real numbers in the weight matrix). 
 There are, of course, models that can be completely understood (Decision Trees, rule-based models), but in general it has been observed that they are less performant. So, rather than trying to "open" the black boxes, we focus just on the predictions themselves. Our goal is now to understand predictors \textit{a-posteriori} and comprehend \textit{what} the black box has learned and \textit{how} it learned it \cite{fong}.
 
@@ -80,7 +136,7 @@ Such patches can be either extracted by an iterative process or even by training
 \bigskip
 
 In this work we make several contributions. First, we propose a framework of explanations as sparse linear models trained on \textit{Interpretable Data Represetations} (extending LIME \cite{lime}). Then, we list some of the possible drawbacks of LIME and propose different workarounds. We also experiment the impact of clustering algorithms on the definition of informative regions and the overall quality of the explanations on a test set of 1000 images (from the ILSVRC2012 dataset \cite{ilsvrc}). 
-Finally, we also introduce a sistematic approach for the evaluation of explanations, creating an annotated dataset that contains the optimal regions that explanations should cover for each of the images in the test set.
+Finally, we also introduce a systematic approach for the evaluation of explanations, creating an annotated data set that contains the optimal regions that explanations should cover for each of the images in the test set.
 
 The rest of this work is organized as follows. In Chapter \ref{chapt:related-work} we give an overview of the current state-of-art methods for explaining predictions in image classification. We also analyze different strategies for image data representation. Next, in Chapter \ref{chapt:background} we present this work's starting point and discuss all the logic behind it in detail. In Chapter \ref{chapt:approach} we then present the general structure of our work and propose various extensions to the original approach, motivating our choices. In Chapter \ref{chapt:experiments} we validate our approach through experiments (by picking a test set of 1000 images) and compare the obtained results. Finally, in Chapter \ref{chapt:conclusions} we summarize all the aspects of our solution and draw the conclusions, also indicating future research directions.
 
@@ -89,17 +145,17 @@ The rest of this work is organized as follows. In Chapter \ref{chapt:related-wor
 
 \chapter{Related work}\label{chapt:related-work}
 
-This chapter will be dedicated to a general overview of the state-of-the-art methods that explain the predictions of a black box on images. According the type of explanation that we want to build, we have to distinguish between different cases. 
+This chapter will be dedicated to a general overview of the state-of-the-art methods that explain the predictions of a black box on images. According to the type of explanation that we want to build, we have to distinguish between different cases. 
 
 The first kind of approaches aim at capturing the \textit{global} logic of a black box by building an interpretable model that is able to mimic its behaviour for any input instance. We refer to this problem as \textit{Black Box Model Explanation} \cite{survey}. We can think of an interpretable model as, for example, a decision tree \cite{global1, global2, global3} or a set of classification rules \cite{huysmans}. 
 
 Another way to make the black box model understandable is to provide a visual or textual representation of its internal mechanism. Not only people would know how the decision process works, but also they would understand what causes the model to return certain predictions more likely than others. These techniques fall under the category of \textit{Black Box Inspection Problem} and might be implemented through sensitivity analysis \cite{inspection1, inspection2} (i.e. building a feature importance plot by varying the input of the black box). 
 
-As an alternative, the simplest way to obtain interpretable, human-readable explanations is to build an interpretable model right away \cite{transparent1, transparent2, transparent3}. This can be a decision tree, a set of classification rules, a linear model or even a nearest neighbour model. We call this problem \textit{Transparent Box Design Problem} as it consists in the definition of a model that is interpretable on its own.
+As an alternative, the simplest way to obtain interpretable explanations is to build an interpretable model directly \cite{transparent1, transparent2, transparent3}. This can be a decision tree, a set of classification rules, a linear model or even a nearest neighbor model. We call this problem \textit{Transparent Box Design Problem} as it consists in the definition of a model that is interpretable on its own.
 
 The last approach (that is also the one our work is focused on) is the \textit{Black Box Outcome Explanation}, which is the counterpart of the \textit{Black Box Model Explanation} problem. 
-These \textit{local} approaches \cite{survey}, in fact, are opposed to those that aim at providing a complete description of the black box by building an interpretable version of the model that is able to mimic the behaviour of the original one. In other words, they are trying to explain a single \textit{prediction} rather than the entire \textit{model}.
-The common strategy of such methods is to provide a locally interpretable model (i.e. that can be clearly understood by a human) for explaining the prediction of the black box. This can be either a heatmap, defining the most important regions of the image that contribute to the prediction, or a mask, definig the minimal amount of information that, when deleted, causes the prediction to change drastically.
+These \textit{local} approaches \cite{survey}, in fact, are opposed to those that aim at providing a complete description of the black box by building an interpretable version of the model that is able to mimic the behavior of the original one. In other words, they are trying to explain a single \textit{prediction} rather than the entire \textit{model}.
+The common strategy of such methods is to provide a locally interpretable model (i.e. that can be clearly understood by a human) for explaining the prediction of the black box. This can be either a heatmap, defining the most important regions of the image that contribute to the prediction, or a mask, defining the minimal amount of information that, when deleted, causes the prediction to change drastically.
 Other approaches of the same kind, instead, aim at providing the user with a complete description of the image as an explanation. Such a caption not only lists all the objects in the image, but also describes the relations among them in a natural language sentence.
 
 \bigskip
@@ -125,9 +181,9 @@ where S is the description of the input image I and $\theta$ are simply the mode
 \log p(S \, | \, I)  = \sum\limits_{t=0}^N \log p(S_t \, | \, I, S_0, \dots, S_{t-1}) 
 \end{equation}
 
-where the probability of the $t$-th word $S_t$ of S is conditioned by all the previous words generated so far. The term $p(S_t \, | \, I, S_0, \dots, S_{t-1})$ is modeled by a Recurrent Neural Network (RNN) where all the previous words are expressed by a hidden state or memory. This RNN is the one that decodes the inputs into target senteces.
+where the probability of the $t$-th word $S_t$ of S is conditioned by all the previous words generated so far. The term $p(S_t \, | \, I, S_0, \dots, S_{t-1})$ is modeled by a Recurrent Neural Network (RNN) where all the previous words are expressed by a hidden state or memory. This RNN is the one that decodes the inputs into target sentences.
 
-In machine translation, RNNs are used also to encode the variable-length source sentences into a fixed-length vectorial representation. Since our inputs are images (and not sentences), the approach consists in replancing the encoder RNN with a deep Convolutional Neural Netowork that is capable of producing a rich, fixed-length representation.
+In machine translation, RNNs are used also to encode the variable-length source sentences into a fixed-length vectorial representation. Since our inputs are images (and not sentences), the approach consists in replacing the encoder RNN with a deep Convolutional Neural Network that is capable of producing a rich, fixed-length representation.
 \bigskip
 
 
@@ -159,12 +215,12 @@ The strategy adopted by \cite{neural-attention} consists in the generation of at
 Note that, in this setting, each neuron of a convolutional layer can be matched with a specific area of the image.
 \bigskip 
 
-In \cite{fong}, Fong et al. present a model-agnostic framework that defines saliency masks as \textit{meaningful perturbations}. The goal is to study the effect of deleting specific regions from and image and find those that are maximally informative.
+In \cite{fong}, Fong et al. present a model-agnostic framework that defines saliency masks as \textit{meaningful perturbations}. The goal is to study the effect of deleting specific regions from an image to find those that are maximally informative with respect to the prediction.
 
 The ideal solution is to find the smallest \textit{deletion mask} that, when applied, causes the prediction of the black box to drop significantly. Such mask is then presented to the user as an explanation.
 
-One problem of this approach is that, sometimes, deletion masks can trigger artifacts. Artifacts are particular inputs that can cause Neural Networks to generate unexpected output. Usually, masks that contain artifacts look inuntuitive and unnatural and this impacts heavily on the quality of the visual explanation. 
-To solve this issue, the authors of \cite{fong} suggest not to focus on the specific details of the mask and apply a random jitter. Also, since artifacts masks are not good representatives of natural perturbations, they force them to have a simple and regular structure (opposed to the one of artifacts).
+One problem of this approach is that, sometimes, deletion masks can trigger artifacts. Artifacts are particular inputs that can cause Neural Networks to generate unexpected output. Usually, masks that contain artifacts look unintuitive and unnatural and this impacts heavily on the quality of the visual explanation. 
+To solve this issue, the authors of \cite{fong} suggest not to focus on the specific details of the mask and apply a random jitter. Also, since artifacts masks are not good representatives of natural perturbations, they force them to have a simple and regular structure.
 \bigskip
 
 In parallel with \cite{fong}, the authors of \cite{real_time_image_saliency} developed a saliency detection method that can be performed by single forward pass (rather than interatively, like in \cite{obj-detectors}) and produces high quality and sharp masks. To address the problem of artifacts, their solutions is to \textit{crop} the image rather than masking it. The goal is to find the tightest rectangular crop that contains the entire salient region of the image.
@@ -177,7 +233,7 @@ To evaluate the quality of such explanations, they also introduce a \textit{sali
 s(a,p) = log(\widetilde{a}) - log(p)
 \end{equation}
 
-where $a$ is the area of the cropped region (as fraction of the image size) and $p$ is the probability assigned by the black box to class $c$ (the class of the original image) when feeding it the cropped image. $\widetilde{a}$ defines the minimum threshold and is just $max(a,0.05)$. The lower this value, the more precise is the saliency region.
+where $a$ is the area of the cropped region (as fraction of the image size) and $p$ is the probability assigned by the black box to class $c$ (the class of the original image) when feeding it the cropped image. $\widetilde{a}$ defines the minimum threshold and is just $max(a,0.05)$. The lower this value, the more precise and sharp is the saliency region.
 
 \begin{figure}
 \centering
@@ -224,14 +280,14 @@ Figure \ref{fig:interpretable-convnets} shows the differences between filters of
 
 \section{Alternative image data representations}
 
-The most popular way of representing images typically makes use of a matrix of pixels (actually, a tensor for RGB images) with a fixed structure, in the sense that pixels are ordered and there is nothing that memorizes their spatial structure.
+The most popular way of representing images typically makes use of a matrix of pixels (actually, a three-dimensional tensor for RGB images) with a fixed structure, in the sense that pixels are ordered and there is nothing that memorizes their spatial structure.
 
 The authors of \cite{bag-of-pixels} propose to model images as bags of pixels (or set of vectors). If we take grayscale images as an example, such bags are collections of tuples of the form (X, Y, I) where (X, Y) are the spatial coordinates of the pixel and I the \textit{intensity} value. One advantage of this representation is that it is permutational invariant, making it suitable for variations such as morphing and translation. Taking the latter as an example we note that, in the classic matrix representation, such an operation would result highly non-linear. Translating a grayscale image by $k$ pixels, in fact, would require to multiply it by a shifting matrix raised to the power of $k$ (because we only have a basis of variation, the intensity of the pixels). 
 
 On the other hand, in the bag of pixels representation we simply add a constant factor to the (X, Y) coordinates of each tuple inside the bag (we now have two more bases of variation). This means that, in this representation, an image can translate or morph by using a simple linear transformation. Rather than a representing a fixed concept, bags of pixels allows images to be viewed as a manifold of possible vectorized configurations.
 \bigskip
 
-Another way to represent images in classification tasks is the visual \textit{bag-of-words} (BOW), as described in works such as \cite{bag-of-keypoints, yang-visual-words, yang2-visual-words, old-visual-words, visual-word-reconstruction}. This idea is adapted from the standard BOW commonly used in information retrieval and natural language processing for text data. In that scenario, a document is represented by an histogram that counts the frequency of each word appearing in the document itself. 
+Another way to represent images in classification tasks is the visual \textit{bag-of-words} (BOW), as described in works such as \cite{bag-of-keypoints, yang-visual-words, yang2-visual-words, old-visual-words, visual-word-reconstruction}. This idea is adapted from the standard BOW commonly used in information retrieval and natural language processing for text data. In that scenario, a document is represented by an histogram that counts the number of occurrences of each word appearing in the document itself. 
 
 We can exploit the same concept for image data, but the difference is that we use images' features (regions, specific patterns etc.) instead of words. For the sake of comprehension, we can think of them as \textit{visual words}. 
 
@@ -265,18 +321,18 @@ Solutions similar to those presented in \cite{show-and-tell, show_attend_and_tel
 
 Going back to single-object recognition tasks, our approach shares some properties with \cite{gradcam, neural-attention, zhou}: those methods propose the definition of maps (or masks) that highlight the most salient regions of an image with respect to a certain prediction. The final result is indeed not very different from ours: in both cases, the user can clearly distinguish what are the areas of the image that contribute the most to the prediction made by the black box. 
 
-There is however a fundamental difference in the way these explanations are generated. In \cite{gradcam, neural-attention, zhou}, maps are created by digging into the architecture of the black box (therefore it is not a black box anymore), which must be a CNN. The idea behind those solutions is to estabilish the contribution of different neurons in convolutional layers to the actual prediction. After selecting the most relevant ones, the mask is generated by highlighting the correspondant features in the image. 
+There is however a fundamental difference in the way these explanations are generated. In \cite{gradcam, neural-attention, zhou}, maps are created by digging into the architecture of the black box (therefore it is not a black box anymore), which must be a CNN. The idea behind those solutions is to establish the contribution of different neurons in convolutional layers to the actual prediction. After selecting the most relevant ones, the mask is generated by highlighting the corresponding features in the image. 
 Being tightly coupled with the architecture of the black box makes these approaches unusable in many situations.
 
 What we propose is then a \textit{model-agnostic} explanation system that completely abstracts from the type of black box used. In producing our explanations we indeed use the model as a pure black box: we just need its predictions, not caring about the way they are made.
-To do so, we plan to build various linear, interpretable models (one for each prediction) that approximate the behaviuor of the black box in the neighborhood of the image to be explained.
+To do so, we plan to build linear, interpretable models that approximate the behavior of the black box in the neighborhood of the image to be explained.
 
-In \cite{fong}, the authors follow the exact same principle : to build explanations, in fact, they just focus on the images themselves, trying to identify informating regions by applying what they call \textit{meaningful perturbations}. The type of black box is again irrelevant, because the goal consists in studying how the model reacts to certain perturbations.
+In \cite{fong}, the authors follow the exact same principle: to build explanations, in fact, they just focus on the images themselves, trying to identify informative regions by applying what they call \textit{meaningful perturbations}. The type of black box is again irrelevant, because the goal consists in studying how the model reacts to certain perturbations.
 
 Finally, as far as regards the way images are represented, our approach differs from those that propose to include semantic aspects in the representation of images \cite{bag-of-keypoints, yang-visual-words, yang2-visual-words, old-visual-words, visual-word-reconstruction, bag-of-pixels, visual-bag-of-words}. Since we plan to highlight, cut and replace contiguous patches of pixels, the most natural choice is to use matrices of RGB values.
 
 \chapter{Background: LIME}\label{chapt:background}
-In this chapter we explain in detail the strategy adopted by \textit{LIME} (\textit{Local Interpretable Model-agnostic Explanations})\cite{lime}, which is the starting point of this thesis' work. The main topic we cover are \textit{explanations}: we will see that, sometimes, it is necessary to explain the predictions of a black box classifier so that people using it can also trust it. The kinds of explanations we may think of are various (depending on the type of data under analysis), such as textual and visual feedbacks. In this work we are focused on explaining predictions on images: LIME provides explanations consisting of highlighted areas inside the images, representing patterns that contribute the most to the final outcome of the black box. 
+In this chapter we explain in detail the strategy adopted by \textit{LIME} (\textit{Local Interpretable Model-agnostic Explanations})\cite{lime}, which is the starting point of this thesis' work. The main topic we cover are \textit{explanations}: we will see that, sometimes, it is necessary to explain the predictions of a black box classifier so that people using it can also trust it. The kinds of explanations we may think of are various (depending on the type of data under analysis), such as textual and visual feedback. In this work we are focused on explaining predictions on images: LIME provides explanations consisting of highlighted areas inside the images, representing patterns that contribute the most to the final outcome of the black box. 
 
 In standard scenarios, machine learning models are often evaluated using accuracy, precision and other metrics based just on the outcome of the classifier. 
 The idea behind LIME is to exploit explanations as an additional evaluation parameter: if a classifier has low accuracy but is able to generate intuitive explanations (whether the prediction is right or not), then the users will trust it and people who developed it can understand better what is going on inside the opaque structure of the model.
@@ -284,9 +340,9 @@ The idea behind LIME is to exploit explanations as an additional evaluation para
 To evaluate the explanations themselves, the authors of \cite{lime} define the concept of \textit{interpretability}. Explanations need to be simple enough to be understood by the majority of people, even those ones who are not experts. For instance, when explaining the prediction of a decision tree, it is recommended not to include more than 4-5 statements in the explanations (in other words, the tree's depth should not exceed a certain value). 
 Or, in case of linear models, it might be better to keep the explanation readable, limiting as much as possible the number of features having non-zero weights.
 
-\section{Explaning the predictions}
+\section{Explaining the predictions}
 
-In our terminology, explaining a prediction corresponds to provide the user with feedbacks that can help him to understand clearly what are the relationships between the given input data and the output data. In the specific case of image predictions, an explanation is just a set of areas in the picture the black box looks at to take its decision. 
+In our terminology, explaining a prediction corresponds to provide the user with feedback that can help him to understand clearly what are the relationships between the given input data and the output data. In the specific case of image predictions, an explanation is just a set of areas in the picture the black box looks at to take its decision. 
 
 \begin{figure}
 \begin{center}
@@ -302,37 +358,37 @@ https://raw.githubusercontent.com/marcotcr/lime/master/doc/images/lime.png }
 
 One important characteristic of a good explainer is the ability to explain the predictions of any classifier, without making any assumptions on its internal structure. These methods are therefore \textbf{model-agnostic} and the models, as we already pointed out, should only be seen as plain black boxes. Many of the most performant models in the literature have extremely complex structures (\textit{Random Forests} and \textit{Convolutional Neural Networks}, just to name a few), so when it comes to practice one should not limit himself by choosing simple (and possibly inaccurate) models.
 
-We also need to point out that, every time we say "explanation", we mean "local explanation" (for more details, see section \ref{chapt:related-work}). The decision function of the black box may have a boundary that is too complex to be interpretable (Figure \ref{fig:decision_bound}). What LIME tries to explain are just the single outcomes, taken one at a time. Giving a general, complete and exhaustive description of the entire model is a hard task and it still remains an unsolved problem in the state of the art.
+We also need to point out that, every time we say "explanation", we mean "local explanation" (for more details, see section \ref{chapt:related-work}). The decision function of the black box may have a boundary that is too complex to be interpretable (Figure \ref{fig:decision_bound}). What LIME tries to explain are just the single outcomes, taken one at a time. Giving a general, complete and exhaustive description of the entire model is a hard, challenging task and it still remains an unsolved problem in the state of the art.
 
 
 \section{The need for interpretability and fidelity}
 
 Every single time we ask LIME for an explanation, it needs to build a simple, interpretable model that mimics sufficiently well the black box in the vicinity of the image that is being analyzed. 
-\textit{Interpretability} is fundamental because explanations need to be crystal clear to anyone and \textit{fidelity} ensures that the interpretable model captures the local behaviour of the black box.
+\textit{Interpretability} is fundamental because explanations need to be crystal clear to anyone and \textit{fidelity} ensures that the interpretable model captures the local behavior of the black box.
 
 To ensure interpretability, LIME builds ad-hoc \textit{Interpretable Data Representations} (IDR). In the case of image classification, we can think of "shattering" the picture into a set of areas (regardless of their shape) made of contiguous pixels. An IDR can therefore be defined as an array of bits telling whether or not the single areas are present.
 
 Note that IDRs \textit{do not} necessarily correspond to the features used by the model in the prediction process. 
 Such features, indeed, may be arbitrarily complex structures that are not suitable for being shown to the end user. Convolutional Neural Networks, for instance, use convolutional \textit{feature maps} as internal representations of images in the hidden layers.
 
-Fidelity, instead, is obtained by choosing the model that best approximates the black box in the vicinity of the image. Defining the opposite of the fidelity as the \textit{locality loss} and the opposite of interpretability as \textit{complexity}, LIME's goal can be reconducted to a minimization problem defined this way:
+Fidelity, instead, is obtained by choosing the model that best approximates the black box in the vicinity of the image. Defining the opposite of the fidelity as the \textit{locality loss} and the opposite of interpretability as \textit{complexity}, LIME's goal can be reconducted to a minimization problem defined by the following equation:
 
 \begin{eqnarray}
 model = \arg\min_{g \in G} \;\; locality\_loss(g) + complexity(g)
 \label{eqn:bestmodel}
 \end{eqnarray}
 
-where $G$ is the class of interpretable models (in the case of LIME, $G$ is the family of linear regression models). More precisely, $complexity(g)$ defines how understandable the model $g$ and its explanations are. For linear models, we can think of this measure as the number of non-zero weights in the final regressor: if we have many of them, we cannot distinguish clearly the relevant features.
+where $G$ is the class of interpretable models (in the case of LIME, $G$ is the family of linear regression models). More precisely, $complexity(g)$ defines how understandable the model $g$ and its explanations are. For linear models, we can think of this measure as the number of non-zero weights in the final regressor: if we have many of them, we cannot distinguish clearly the relevant features in the explanation.
 
-As for $locality\_loss(g)$, it can be seen as the degree of similarity between $g$ and the black box. From the models having the lowest value of $complexity$, one should choose the one that better approximates the behaviour of the black box in the vicinity of the instance to be explained (even if it is not the simplest one). The best model is then the solution of Equation \ref{eqn:bestmodel}, which minimizes both the $complexity$ and $locality\_loss$.
+As for $locality\_loss(g)$, it can be seen as the degree of similarity between $g$ and the black box. From the models having the lowest value of $complexity$, one should choose the one that better approximates the behavior of the black box in the vicinity of the instance to be explained (even if it is not the simplest one). The best model is then the solution of Equation \ref{eqn:bestmodel}, which minimizes both the $complexity$ and $locality\_loss$.
 
 \section{Generation of the neighborhood}
 
-As we have already mentioned, LIME looks for an interpretable model that is able to replicate the local behaviour of the function represented by the black box. Among all the possible models, it clearly wants to pick the best one in terms of fidelity. Ideally, LIME could simply choose the model $g \in G$ that minimizes the right-hand side of Equation \ref{eqn:bestmodel}. 
+As we have already mentioned, LIME looks for an interpretable model that is able to replicate the local behavior of the function represented by the black box. Among all the possible models, it clearly wants to pick the best one in terms of fidelity. Ideally, LIME could simply choose the model $g \in G$ that minimizes the right-hand side of Equation \ref{eqn:bestmodel}. 
 
-While it might be simple to compute the term $complexity(g)$ just by looking at the structure of the model (depth of decision tree, weights of a regressor etc.), there is no way to determine exactly the term $locality\_loss(g)$, because it obviously depends on the black box's function: to build a model-agnostic explainer, indeed, no assumptions should be made on the type of black box used. 
+While it might be simple to compute the term $complexity(g)$ just by looking at the structure of the model (depth of decision tree, weights of a regressor etc.), there is no way to determine exactly the term $locality\_loss(g)$, because it obviously depends on the black box's function: in order to build a model-agnostic explainer, indeed, no assumptions should be made on the type of black box used. 
 
-What can be done, instead, is approximating the local behaviour of the black box by seeing how it reacts to variations in the input images. To do that, a certain number of samples is drawn from the domain of the IDRs. In the case of LIME, such domain includes binary vectors
+What can be done, instead, is approximating the local behavior of the black box by seeing how it reacts to variations in the input images. To do that, a certain number of samples is drawn from the domain of the IDRs. In the case of LIME, such domain includes binary vectors
 
 \[
 	w \in \{0,1\}^k
@@ -355,16 +411,16 @@ Figure \ref{fig:neighborhood_generation} gives an idea of what neighborhood imag
 To generate the image corresponding to the i-th row, LIME starts from the original picture and, every time it finds an entry set to 0, it \textbf{turns off} the corresponding area. In the example shown in Figure \ref{fig:neighborhood_generation}, turning off simply means replacing the pixels with plain gray areas, but of course different strategies can be adopted (like replacing the patches with the average of the pixels or picking pieces from other images).
 In the neighborhood image depicted in Figure \ref{fig:neighborhood_generation}, we highlighted in yellow all the areas (features) the image has been split into. We can see that they are all contiguous patches of pixels and, in this case, they also have an irregular shape. In particular, they were obtained using \textit{quickshift}\cite{quickshift}, which is an algorithm based on an approximation of kernelized mean-shift\cite{meanshift}.
 
-Keeping the label of the real image as a reference, LIME applies the black box model to each one of the images that have just been generated, obtaining an array 
+Keeping the label of the real image as a reference, LIME applies the black box model to each of the images that have been generated, obtaining an array 
 
 \[
 	preds \in  [0, 1]^{n}\subset \mathbb{R}^{n}
 \]
 
 of prediction probabilities (the one highlighted in red in Figure \ref{fig:neighborhood_generation}), where $n$ is the total number of samples in the neighborhood. Each value represents the probability that the black box still assigns the original label to a certain neighborhood image after all the perturbations are applied.
-This allows to observe how the predictions change when changing the input, giving a good approximation of the local behaviour of the black box model.
+This allows to observe how the predictions change when changing the input, giving a good approximation of the local behavior of the black box model.
 
-Once the $preds$ array is obtained, it is used to learn a regression model where the loss function is the linear least squares function and the regularization is given by the l2-norm (also known as Tikhonov regularization). In the model, the input variables are the IDRs and the targets are the corresponding values of $preds$.
+Once the $preds$ array is obtained, it is used to learn a regression model where the loss function is the linear least squares function and the regularization is given by the l2-norm (also known as Tikhonov regularization). In the model, the input variables are the IDR arrays and the targets are the corresponding probabilities inside $preds$.
  
 The model that best approximates the black box is the one that minimizes the loss function and the learned weights (as many as the number of entries of each IDR) define a measure of importance among the features. In particular:
 
@@ -399,28 +455,27 @@ is just a set of tuples of the form $(f_{i},w_{i})$ where $f_{i}$ is the i-th fe
 \end{figure}
 
 Trusting the model is a key factor when it comes to prediction tasks. One of the main concerns, of course, is the model's ability to output the correct predictions given certain input data. The minimization of the discrepancy between the real classes and the predicted ones is the goal of the so-called \textit{learning} phase. However, there are cases in which this is not enough and we need to trust the model's predictions. Rather than treating it as an oracle, one might need to know what is the reasoning behind the process and what are the relationships between the input and the output. 
-An example is the usage of machine learning models in medical diagnosis\cite{healthcare}: if the model claims that a patient has a certain disease, doctors may need to know what are the factors that cause it.
+An example is the usage of machine learning models in medical diagnosis\cite{healthcare}: if the model claims that a patient has a certain disease, doctors may need to know what are the factors that cause it in order to trust the prediction.
 
 Note that these requirements must apply to both correct and wrong predictions: in the first case, we want to make sure that the prediction is reasonable (and not based on luck or randomness), while in the second one we want to understand the causes of an error (so that it can be fixed). 
+The strategy adopted by LIME meets all those requirements as it shows the user what are the exact areas of the image that contribute to the prediction. It is then the user's responsibility to judge the correctness of the prediction.
 
-The strategy adopted by LIME meets all those requirements, because it shows the user what are the exact areas of the image that contribute to the prediction. It is then the user's responsibility to judge the correctness of the prediction.
 
-
-Figure \ref{fig:insight} shows an example of wrong prediction. The image on the left (Figure \ref{subfig:insight_orig}) portrays a girl holding a hotdog in her hands. The correct label for this image is indeed \textit{hotdog}. When feeding that image to the black box, the outcome is completely wrong (\textit{candle}). Apparently, there are no candles in the picture, so we cannot even suspect what went wrong during the prediction process. However, when we use LIME to get an explanation for the label \textit{candle}, we immediately understand what led the model astray: the fingers of the girl's left hand were recognized as candles (due to their shape and the presence of the nail polish). The corresponding area is indeed the only part of the image that has been highlighted.
+Figure \ref{fig:insight} shows an example of wrong prediction. The image on the left (Figure \ref{subfig:insight_orig}) portrays a girl holding a hot dog in her hands. The correct label for this image is indeed \textit{hotdog}. When feeding that image to the black box, the outcome is completely wrong (\textit{candle}). Apparently, there are no candles in the picture, so we cannot even suspect what went wrong during the prediction process. However, when we use LIME to get an explanation for the label \textit{candle}, we immediately understand what led the model astray: the fingers of the girl's left hand were recognized as candles (due to their shape and the presence of the nail polish). The corresponding area is indeed the only part of the image that has been highlighted.
 
 \chapter{Proposed approach}\label{chapt:approach}
 The goal of this work is to extend LIME by experimenting an alternative way to generate the neighborhood of a given image when trying to come up with an explanation for the class predicted by the black box. 
 
 To get started, we will use a different segmentation technique that is based on a grid-like approach to measure the impact of the features' shapes on the quality of the explanation (we will give different definitions of "quality" of an explanation later on). Various sizes of the grid will be used so that the analysis will result as exhaustive as possible. 
 
-Another parameter that we would like to tune is the way features of the input image are replaced (or \textbf{turned off}) when generating images in its vicinity. The original version of lime provides two alternative ways to do that:
+Another parameter that we would like to tune is the way features of the input image are replaced (or \textbf{turned off}) when generating images in its vicinity. The original version of LIME provides two alternative ways:
 
 \begin{enumerate}
 \item replacing all the pixels in the feature with a plain color (e.g. gray, black or white). In the following, we will use the gray color and call this variant \textbf{LIME gray};
 \item replacing the pixels' values with the mean value of all the pixels inside the specific region. We can think of this technique as a sort of undersampling of the image. We will denote this version as \textbf{LIME color}.
 \end{enumerate}
 
-The main idea of our work, instead, is to replace the patches by picking "pieces" of different images, drawn from a \textit{test set} which includes the original image, too.
+The main idea of our work, instead, is to replace the patches by picking "pieces" of different images, drawn from a \textit{test set}.
 
 For this reason we propose to modify the feature generation process towards a grid-style one. The original strategy exploits a segmentation algorithm that defines meaningful regions of an image. These regions, however, strongly depend on the contours of the objects appearing in the image itself. In the image-based neighborhood generation process, if we cut out pieces from other images by using those shapes, we would not be able to capture any interesting pattern. Also, we would run the risk of putting together pieces of different patterns.
 
@@ -463,7 +518,7 @@ One important thing to notice is that, since we are explaining the label \emph{t
 
 \bigskip
 
-The next variant we present is again the original one, but this time we replace the turned off features with the average value of all the pixels inside them (we will refer to this variant as LIME color). Here the result is a little bit different from the previous version: as we can see in Figure \ref{fig:limecolor_neigh}, it looks like the images are somehow undersampled in correspondance of the features that were turned off. The result is that the predominant color in the patches replaces all the other pixels.
+The next variant we present is again the original one, but this time we replace the turned off features with the average value of all the pixels inside them (we will refer to this variant as LIME color). Here the result is a little bit different from the previous version: as we can see in Figure \ref{fig:limecolor_neigh}, it looks like the images are somehow undersampled in correspondence of the features that were turned off. The result is that the predominant color in the patches replaces all the other pixels.
 
 \begin{figure}
 \begin{center}
@@ -488,9 +543,9 @@ In addition to that, the irrelevant parts increased (road, sidewalk and grass).
 
 \section{LIME$\#$}
 
-The next version we present is LIME\#. The feature replacement strategy is exactly the same as the one of LIME, but in this case the patches have a squared shape (as if the image were split into a regular grid). We propose again two different variants, based on the way we replace features. For the first one, we use the gray color to replace turned off features and refer to it as LIME\# gray. 
+The next version we present is LIME\#. The feature replacement strategy is the same as LIME, but in this case the patches have a squared shape (as if the image were split into a regular grid). We propose again two different variants, based on the way we replace features. For the first one, we use the gray color to replace turned off features and refer to it as LIME\# gray. 
 
-The size of the grid has to be specified by the user, but in the example in Figure \ref{fig:limesharp_neigh} it is fixed to 8x8. This time it is evident that features do not have shapes that adapt to the image subject (they are not the result of a segmentation algorithm anymore). In fact, they are just squares at fixed positions and the result is that there are some "oversized" gray pixels here and there.
+The size of the grid has to be specified by the user, but in the example in Figure \ref{fig:limesharp_neigh} it is fixed to 8x8. This time it is evident that features do not have shapes that adapt to the image subject (they are not the result of a segmentation algorithm anymore). They are just squares at fixed positions and the result is that there are some "oversized" gray pixels here and there.
 
 \begin{figure}
 \begin{center}
@@ -548,15 +603,15 @@ As we will see in the next two paragraphs, different ways of defining such image
 
 \subsection{LIME$\#$R}
 
-\textit{LIME\#R} is the first of the two explainers belonging to the category of image-based neighborhood approaches. The "R" in the method name stands for \textit{Random} and it indicates the way the image pool is built.
+\textit{LIME\#R} is the first of the two explainers belonging to the category of image-based neighborhood approaches. The "R" in the method name stands for \textit{Random} and it indicates how the images from the test set are drawn.
 
-In this variant, we have that 
+In this variant, we have that
 \begin{equation}
 image\,pool = I
 \label{eqn:image_pool}
 \end{equation}
 
-where \textit{I} is any set of images arbitarily chosen by the user. No specific selection criterion needs to be used when building this set.
+where \textit{I} is any set of images arbitrarily chosen by the user. No specific selection criterion needs to be used when building this set.
 
 Our proposed approach for the neighborhood generation process is described in Figure \ref{fig:img-based_neigh}. In particular, when we encounter a 0 entry in the IDR array (a single row in the matrix), we go through the following operations:
 
@@ -566,9 +621,9 @@ Our proposed approach for the neighborhood generation process is described in Fi
 \item use the part of image obtained from 2) to replace the feature in the original image.
 \end{enumerate}
 
-At the end of this process, images in the neighborhood look like the one shown in Figure \ref{fig:img-based_neigh} (bottom-right). Even in this case, the shape of the features is squared (highlighted by the "\#" characther in the explainer's name).
+At the end of this process, images in the neighborhood look like the one shown in Figure \ref{fig:img-based_neigh} (bottom-right). Even in this case, the shape of the features is squared (denoted by the "\#" character in the explainer's name).
 
-Figure \ref{fig:limesharpR_neigh} gives an idea of the composition of the images in the neighborhood. Pieces of possibly unrelated images are scattered throughout the picture, but we can still detect some details of the orginal image.
+Figure \ref{fig:limesharpR_neigh} gives an idea of the composition of the images in the neighborhood. Pieces of possibly unrelated images are scattered throughout the picture, but we can still detect some details of the original image.
 
 \begin{figure}
 \begin{center}
@@ -609,7 +664,7 @@ where
 We see that \textit{image pool} only contains images that, according to the clustering algorithm, belong to the same cluster as \textit{original}. The idea behind this approach is to measure the impact of choosing similar images to construct the neighborhood instead of completely random ones.
 
 As we previously did for \textit{LIME\#R}, we now explain in detail the neighborhood generation process. First of all, we build the image pool by applying clustering to the images in the set \textit{I}. Note that this task is only performed once (and not for each image in the neighborhood).
-Then, for each 0 entry in each IDR array, we apply the same operations as before (i.e. drawing an image from the pool, cut off the specific part and replace it in the original image).
+Then, for each 0 entry in each IDR array, we apply the same operations as before (i.e. draw an image from the pool, cut off the specific part and replace it in the original image).
 
 \begin{figure}
 \begin{center}
@@ -627,7 +682,7 @@ Then, for each 0 entry in each IDR array, we apply the same operations as before
 
 In Figure \ref{fig:limesharpC_neigh} we see that neighborhood images still contain pieces of other images, but this time we note some interesting details such as wheels of other vehicles. The point of using clustering in this scenario is exactly to group together images that are visually similar and see whether this technique has a positive or negative impact on the results.
 
-Figure \ref{fig:limesharpC_same_clus} shows a subset of the images that belong to the same cluster as the image to be explained (the one in Figure \ref{fig:tricycle}). All of them represent bicycles, tricycles and motor scooters: in fact, the cluster seems to group together images containing the same details (vehicles having both wheels and handlebars).
+Figure \ref{fig:limesharpC_same_clus} shows a subset of the images that belong to the same cluster as the image to be explained (the one in Figure \ref{fig:tricycle}). All of them represent bicycles, tricycles and motor scooters: in fact, the cluster seems to group together images containing the same visual details (i.e. vehicles having both wheels and handlebars).
 
 %\begin{figure}
 %\begin{center}
@@ -660,11 +715,11 @@ Cluster 4 & toyshop & $20/68$\\\hline
 
 In the evaluation of the cluster results we do not use the standard measures (e.g. \textit{Sum of Squared Errors} for K-means) because our idea is based on the analysis of the contents of the single clusters to look at the distribution of the images and on finding the frequency of the most frequent class in each cluster. In order to capture this idea of clustering compactness, we propose to use a measure called \textit{Clustering Purity}. 
 
-Suppose our clustering algorithm finished its execution and found $n$ clusters: to compute the \textit{Clustering Purity}, we pick each cluster one by one and extract the most frequent class along with its frequency. Once all the values are collected, we simply compute the average, median and standard deviation.
+Suppose our clustering algorithm finished its execution and found $n$ clusters: to compute the \textit{Clustering Purity}, we pick each cluster one by one and extract the most frequent class along with its frequency. Once all the values are collected, we compute the average, median and standard deviation.
 
 
 
-Now let us try to compute the \textit{Clustering Purity} in the small example in Table \ref{tab:cluster_purity_example}. In the first column we find the clusters resulting from the execution of the clustering algortihm (with $n=4$), while in the second one we find the most frequent class in each cluster. Using the values under the column \textbf{Frequency}, we obtain that $average=0.37$, $median=0.37$ and $std=0.0719$.
+Now let us try to compute the \textit{Clustering Purity} in the small example in Table \ref{tab:cluster_purity_example}. In the first column we find the clusters resulting from the execution of the clustering algorithm (with $n=4$), while in the second one we find the most frequent class in each cluster. Using the values under the column \textbf{Frequency}, we obtain that $average=0.37$, $median=0.37$ and $std=0.0719$.
 
 
 \subsubsection{Clustering algorithm}
@@ -689,7 +744,7 @@ Now let us try to compute the \textit{Clustering Purity} in the small example in
 
 To compute clustering on image data, instead of rearranging all the single pixels of the image in a monodimensional array, we apply a process of undersampling that depends on the size of the grid (the one that defines the size of the features). In other words, if we choose $grid\_size = n$ during the neighborhood generation process, then the clustering will be performed on images that have been undersampled to $nxn$ pixels.
 
-In order to clarify how this process works, consider the following example. Suppose we choose a random image and that $grid\_size=8$: the image is then divided in $8x8 = 64$ squared regions, each having a certain number of pixels inside. Now each region is replaced by a single pixel, whose RGB values are just the average of all the RGB values of the pixels inside the region. The resulting udersampled image has then a dimension of $8x8$ pixels. Before passing this image to the clustering algorithm, it is flattened into a monodimensional array having dimension $8x8x3$ (3 is because we have 3 channels: R, G and B).
+In order to clarify how this process works, consider the following example. Suppose we choose a random image and that $grid\_size=8$: the image is then divided in $8x8 = 64$ squared regions, each having a certain number of pixels inside. Now each region is replaced by a single pixel, whose RGB values are just the average of all the RGB values of the pixels inside the region. The resulting undersampled image has then a dimension of $8x8$ pixels. Before passing this image to the clustering algorithm, it is flattened into a monodimensional array having dimension $8x8x3$ (3 is because we have 3 color channels: Red, Green and Blue).
 \bigskip
 
 We propose two variants of LIME\#C, one using the clustering algorithm \textit{K-means} and one the \textit{Spectral Clustering}.
@@ -715,7 +770,7 @@ Recompute centroids of each cluster\;
 \label{alg:kmeans}
 \end{algorithm}
 
-The main disadvantage of this algorithm is that it only works well when clusters have a spherical or globular shape. K-means has problems also when clusters are not all of the same size and/or they have heterogeneous densities. On top of that, the presence of even few outliers can cause a noticeable difference in the computation of centroids: at each iteration, in fact, centroids tend to adapt to the distribution of points inside their clusters (even the noisy ones).
+The main disadvantage of this algorithm is that it only works well when clusters have a spherical or globular shape. K-means has problems also when clusters are not all of the same size and/or they have heterogeneous densities. On top of that, the presence of even few outliers can cause a noticeable difference in the computation of centroids: at each iteration, in fact, centroids tend to adapt to the distribution of points inside their clusters (even the noisy ones that are far away from the others).
 
 \bigskip
 
@@ -761,7 +816,7 @@ To summarize, Table \ref{tab:lime_versions} lists the unique characteristics of 
 
 In this chapter we test all the different versions of LIME described in the previous section. We will present the data set used for the evaluation of the explanations, then we will define different measures of interest and, in particular, we will specify which kind of images were chosen for the task (chosen classes, their distribution etc.). 
 
-The main points we will address during our experiments are the follwing:
+The main points we will address during our experiments are the following:
 
 \begin{itemize}
 \item how well do the explanations approximate the exact area of the image containing the real label?
@@ -779,11 +834,11 @@ The experiments\footnote{Source code can be found at: github.com/leqo-c/Tesi} we
 
 The black box model that we have used in our experiments is \textbf{Inception v3} (introduced in \cite{inception-v3} along with \textbf{Inception v2}), which is an improvement of the \textbf{Inception v1} network first described in \cite{inception-v1}. Before explaining the basic idea (and the possible improvements) behind the architecture of Inception v1, we will now make some considerations about the contents of images. 
 
-As we know, Convolutional Neural Networks operate on salient parts of the image (better known as \textit{features}) rather than on the single pixels. For instance, if we consider a picture of a bicycle, we may think of a feature as one of its wheels. If features were always of the same dimension, we could simply adapt the size of a filter in the convolutional layer to fit exactly  those features across different images. However, those parts might obviously vary in size in each image, so there is no such thing as a "correct" size for the convolution operation. 
+As we know, Convolutional Neural Networks operate on salient parts of the image (better known as \textit{features}) rather than on the single pixels. For instance, if we consider a picture of a bicycle, we may think of a feature as one of its wheels. If features were always of the same dimension, we could simply adapt the size of a filter in the convolutional layer to fit exactly  those features across different images. However, those parts might obviously vary in size in each image, so there is no such thing as a "correct" size to be used for the convolution operation. 
 
-A na\"ive solution would be to stack convolution layers of different sizes on top of each other, but potential drawbacks would immediately arise: not only it would be computationally expensive, but also deep networks are likely to overfit the data. 
+A na\"ive solution would be to stack convolution layers of different sizes on top of each other, but potential drawbacks would immediately arise: not only it would be computationally expensive, but also excessively deep networks are likely to overfit the data. 
 
-The solution of Inception v1 still considers the usage of convolutions of different sizes, but the key factor is that they are applied on the exact same layer (rather than be spreaded in different, consecutive ones). In other words, instead of going deeper, the network goes wider. The ouputs of such operations are then concatened before being sent to the next layer. 
+The solution of Inception v1 still considers the usage of convolutions of different sizes, but the key factor is that they are applied on the exact same layer (rather than be spread in different, consecutive ones). In other words, instead of going deeper, the network goes wider. The outputs of such operations are then concatenated before being sent to the next layer. 
 
 \begin{figure}
 \centering
@@ -802,7 +857,7 @@ The solution of Inception v1 still considers the usage of convolutions of differ
 \end{figure}
 \bigskip
 
-The usage of large convolutions, however, often leads to the so-called \textit{representational bottleneck}. Reducing drastically the dimension of the images, in fact, inevitably causes a loss of information. On top of that, large convolutions are computationally expensive to apply. The solution adopted by Inception v3 overcomes these drawbacks by factorizing the expensive 5x5 convolutions to two consecutive 3x3 convolutions. This operation leads to a boost in performances because 5x5 convolutions are \textbf{2.78} slower than their 3x3 versions. The process is shown in Figure \ref{fig:inception-versions}. Note that we are also summarizing the improvements made by Inception v2 when describing Inception v3.
+The usage of large convolutions, however, often leads to the so-called \textit{representational bottleneck}. Reducing drastically the dimension of the images, in fact, inevitably causes a loss of information. On top of that, large convolutions are computationally expensive to apply. The solution adopted by Inception v3 overcomes these drawbacks by factorizing the expensive 5x5 convolutions to two consecutive 3x3 convolutions. This operation leads to a boost in performances because 5x5 convolutions are \textbf{2.78} slower than their 3x3 versions. The process is shown in Figure \ref{fig:inception-versions}. When describing Inception v3, we are also summarizing the improvements made by Inception v2.
 
 Another type of factorization involves a general $nxn$ convolution: the authors of \cite{inception-v3} found that factorizing a $nxn$ convolution into a pair of $1xn$ and $nx1$ convolutions made the process 33\% cheaper. 
 
@@ -835,19 +890,19 @@ hotdog & white\_wolf & digital\_clock & barbershop & mountain\_bike \\
  & coyote & wall\_clock & toyshop & tricycle \\
  & dingo &  &  & bicycle-built-for-two \\ \hline
 \end{tabularx}
-\caption{Chosen classes (from ILSVRC2012 data set) for the construction of the dataset used in the experiments. For each of the 20 classes, we picked all the 50 corresponding images (1000 in total).}
+\caption{Chosen classes (from ILSVRC2012 data set) for the construction of the data set used in the experiments. For each of the 20 classes, we picked all the 50 corresponding images (1000 in total).}
 \label{tab:chosen_classes}
 \end{table}
 
 \subsection{Definition of \textit{reference area}}
 
-After running any version of LIME to explain the prediction of a black box for a certain image, what we get is just a set of areas in the picture that (ideally) should identify specific areas of the image that are mainly responsible for that prediction. However, there is no such thing as an information attached to the image that defines the correct boundaries of what we need to explain. To solve this problem, we need to isolate the parts of the image that contain meaningful information (in the sense of the explanation) and test how well the explanations given by LIME can cover them. We will refer to these parts as \textit{reference area}. 
+After running any version of LIME to explain the prediction of a black box for a certain image, what we get is just a set of areas in the picture that (ideally) should identify specific areas of the image that are mainly responsible for that prediction. However, there is no such thing as an information attached to the image that defines the correct boundaries of what we need to explain. To solve this problem, we need to isolate the parts of the image that contain meaningful information (in the sense of the explanation) and test how well the explanations given by LIME can cover them. In the following, we will refer to these parts as \textit{reference area}. 
 
-To do so, starting from the data set we have just selected (see Table \ref{tab:chosen_classes}), we have cut out the parts that best represent the object specified in the image's label, filling all the remaining parts with a plain white color. We have applied this process to each of the 1000 images of the data set: the result is a new, enriched dataset that can be used as a reference when evaluating explanations. A sample image from such dataset is shown in Figure \ref{fig:ground_truth}.
+To do so, starting from the data set we have just selected (see Table \ref{tab:chosen_classes}), we have cut out the parts that best represent the object specified in the image's label, filling all the remaining parts with a plain white color. We have applied this process to each of the 1000 images of the data set: the result is a new, enriched data set that can be used as a reference when evaluating explanations. A sample image from such data set is shown in Figure \ref{fig:ground_truth}.
 
 Note that the reference area should be the one that justifies the prediction of the black box, even when it is wrong (i.e. the output of the black box is different from the actual label of the image). This is because our goal is to explain the (possibly wrong) outcomes of the black box, not the real labels themselves. In fact, when the prediction is different from the real class, we want to know what caused the error. 
 
-To make an example, let us consider again the two images in Figure \ref{fig:insight}: the actual label of the image on the left is \textit{hotdog}, while the predicted one is candle. When defining the reference area, one should not cut out the hotdog that the girl is holding, but rather something that resembles a candle(s). In this case, the fingers of her left hand.
+To make an example, let us consider again the two images in Figure \ref{fig:insight}: the actual label of the image on the left is \textit{hotdog}, while the predicted one is candle. When defining the reference area, one should not cut out the hot dog that the girl is holding, but rather something that resembles a candle(s). In this case, the fingers of her left hand.
 
 
 \begin{figure}
@@ -890,7 +945,8 @@ precision =
 
 This is coherent with the standard definition of precision (which is $\frac{TP}{TP+FP}$) because the highlighted areas in the reference area are actually \textit{True Positives} and the ones outside it are \textit{False Positives}.
 
-The next measure is recall, which can be considered as the ability of the explanation to cover the reference area. To be more specific, it measures the percentage of pixels in the reference area covered by the explanation. Recall is defined as
+The next measure is recall, which can be considered the ability of the explanation to cover the reference area. Specifically, it measures the percentage of pixels in the reference area covered by the explanation. It is defined as
+
 \begin{equation}
 recall = 
 \frac
@@ -899,7 +955,7 @@ recall =
      \label{eqn:recall}
 \end{equation}
 
-Even in this case, we find a correspondance between this formula and the standard definition of recall (that is $\frac{TP}{TP+FN}$): each highlighted pixel in the reference area is indeed a \textit{True Positive}, while the remaining ones (still inside the reference area) are erroneously uncovered (\textit{False Negatives}).
+Even in this case, we find a correspondence between this formula and the standard definition of recall (that is $\frac{TP}{TP+FN}$): each highlighted pixel in the reference area is indeed a \textit{True Positive}, while the remaining ones (still inside the reference area) are erroneously uncovered (\textit{False Negatives}).
 
 The final measure we use is the F-measure, that considers both the precision and the recall in its computations. It is defined as 
 
@@ -926,7 +982,7 @@ F\textnormal{-}measure
 
 \section{Results}
 
-In this section we will analyze the results of the different versions of LIME (in terms of precision, recall and F-measure) and make a comparsion among them. In defining the size of the grid representing images' features, we will use the following values: 4x4, 8x8, 16x16, 32x32, 64x64.
+In this section we will analyze the results of the different versions of LIME (in terms of precision, recall and F-measure) and make a comparison among them. In defining the size of the grid representing images' features, we will use the following values: 4x4, 8x8, 16x16, 32x32, 64x64.
 
 For each of the newly defined versions, we will also study the pros and cons with respect to the original version of LIME. We will also focus on the differences between LIME\#R and LIME\#C to measure the effects of using clustering during the neighborhood generation process. For reasons of readability, plots of performances for increasing values of $grid\_size$ have been moved to the Appendix.
 
@@ -962,7 +1018,7 @@ Also, we note that the more features we highlight the better. However, this is n
 
 The next version we will focus on is LIME\# color. Figure \ref{subfig:limesharp_color_vs_sf} shows its performances for different values of $shown\_features$ and $grid_size$, also making a comparison with LIME color.
 
-For $grid\_size = 16$ and $grid\_size = 32$ we reach a precision of about 0.25 and 0.1, respectively. For $grid\_size = 8$, instead, we see that LIME\# color always outperforms LIME color, reaching a precision of more than 0.6 in correspondance of $shown\_features = 5$.
+For $grid\_size = 16$ and $grid\_size = 32$ we reach a precision of about 0.25 and 0.1, respectively. For $grid\_size = 8$, instead, we see that LIME\# color always outperforms LIME color, reaching a precision of more than 0.6 in correspondence of $shown\_features = 5$.
 
 \begin{figure}
 \centering
@@ -971,7 +1027,7 @@ For $grid\_size = 16$ and $grid\_size = 32$ we reach a precision of about 0.25 a
 \label{subfig:limesharp_color_vs_sf}
 \end{figure}
 
-For the recall, we have a behaviour that is similar to the already mentioned LIME\# gray. LIME\# color performs better than LIME color when $shown\_features \geq 30$ and worse when $shown\_features < 30$. Once again, grid sizes higher than 8 cannot even surpass the 0.2 threshold, both for recall and F-measure. 
+For the recall, we have a behavior that is similar to the already mentioned LIME\# gray. LIME\# color performs better than LIME color when $shown\_features \geq 30$ and worse when $shown\_features < 30$. Once again, grid sizes higher than 8 cannot even surpass the 0.2 threshold, both for recall and F-measure. 
 Finally, we note that the F-measure reaches a maximum of about 0.55 when $grid\_size = 8$ and $shown\_features = 60$. 
 \bigskip
 
@@ -983,7 +1039,7 @@ In accordance to what we have already stated for LIME\# gray, we note that a low
 Using Equation \ref{eqn:image_pool}, we set $image\,pool = I$ where $I$ is the set of all the sampled images used for the experiments (see Section \ref{sect:dataset_used} for more details). 
 
 Figure \ref{subfig:limesharp_R_vs_sf} summarizes the performances of LIME\#R in terms of precision, recall and F-measure. 
-By keeping LIME gray as the main element of comparison between the two versions, let us see whether the introduction of pieces of other images is significant or not (with respect to using a plain gray color). In other words, let us see whether LIME\#R permorms better or worse than LIME\# gray.
+By keeping LIME gray as the main element of comparison between the two versions, let us see whether the introduction of pieces of other images is significant or not (with respect to using a plain gray color). In other words, let us see whether LIME\#R performs better or worse than LIME\# gray.
 
 In the case of precision, when $grid\_size = 8$ the results are slightly worse than those of LIME\# gray, except when $shown\_features = 60$. In that case precision rises above 0.5, surpassing LIME gray. For $grid\_size \geq 16$, the differences are so small that are not worth mentioning.
 
@@ -1012,7 +1068,7 @@ In our experiments, for the Spectral Clustering, we used the scikit-learn implem
 \begin{figure}
 \centering
 \includegraphics[width=.8\linewidth]{images/spectral_silhouette.png}
-\caption{Values of the silhouette cofficient for different number of clusters. Clustering has been computed on images of size 8x8 pixels.}
+\caption{Values of the silhouette coefficient for different number of clusters. Clustering has been computed on images of size 8x8 pixels.}
 \label{fig:spectral-silhouette}
 \end{figure}
 
@@ -1027,7 +1083,7 @@ Figure \ref{fig:purity} shows both the Clustering Purity and the SSE curve for d
 As for the Clustering Purity, in all the plots it is evident the presence of a linear, increasing trend. As the number of clusters increases, it seems that each one becomes purer and purer. This is because when we have a high number of clusters, the number of images inside them keeps decreasing along with their degree of heterogeneity. Also note that even the standard deviation keeps increasing, meaning that there are both good and bad clusters.
 
 If we measure the Clustering Purity in the vicinity of $K=20$, we observe that its average value is around 0.1, meaning that the most frequent class in each cluster has an average frequency of 10\%. 
-This is undoubtedly not the best result, but we have to take into account that, sometimes, images labeled with the same class may be visually different. Indeed, two images representing the same "object" can have different backgrounds, represent the object in different scales or even contain other objects. 
+This is unarguably not the best result, but we have to take into account that, sometimes, images labeled with the same class may be visually different. Indeed, two images representing the same "object" can have different backgrounds, represent the object in different scales or even contain other objects. 
 
 By clustering on raw pixels, it is difficult (if not impossible) to extract some kind of semantic information and group together images of the same class. The only goal  this type of clustering can achieve is grouping together images that are \textit{visually} similar (i.e. having the same predominant color): this is exactly what we wanted to achieve in defining LIME\#C. 
 
@@ -1047,9 +1103,9 @@ Figure \ref{subfig:limesharp_C_vs_sf} shows the performances of LIME\#C (compare
 \label{subfig:limesharp_C_vs_sf}
 \end{figure}
 
-In terms of precision, Figure \ref{subfig:R-C-comparison} shows that  LIME\#C is actually outperformed by LIME\#R: except for the first part of the plot (when $shown\_features \leq 40$) we see that it behaves worse, with a huge difference in correspondance of $shown\_features = 60$ (about 0.25 versus the $\approx 0.52$ of LIME\#R). The whole point of modifying image features (by replacing them with pieces of other images) is to identify those that, when replaced, substantially drop the veridicity of the black box's prediction and mark them as "important" (i.e. giving them a high weight in the regressor and highlighting them in the explanations). As we try to replace them with visually similar patches, the probability of disrupting the prediction is lower, causing the features not to be considered relevant.
+In terms of precision, Figure \ref{subfig:R-C-comparison} shows that  LIME\#C is actually outperformed by LIME\#R: except for the first part of the plot (when $shown\_features \leq 40$) we see that it behaves worse, with a huge difference in correspondence of $shown\_features = 60$ (about 0.25 versus the $\approx 0.52$ of LIME\#R). The whole point of modifying image features (by replacing them with pieces of other images) is to identify those that, when replaced, substantially drop the veridicity of the black box's prediction and mark them as "important" (i.e. giving them a high weight in the regressor and highlighting them in the explanations). As we try to replace them with visually similar patches, the probability of disrupting the prediction is lower, causing the features not to be considered relevant.
 
-From the point of view of the recall, the differences are not so relevant: the only disadvantage of LIME\#C is that the maximum value of recall ($\approx 0.92$, reached when $shown\_features = 60$) is slightly lower to the one of LIME\#R ($\approx 0.99$). 
+For the recall, the differences are not so relevant: the only disadvantage of LIME\#C is that the maximum value of recall ($\approx 0.92$, reached when $shown\_features = 60$) is lower than the one of LIME\#R ($\approx 0.99$). 
 
 \begin{figure}
 \centering
@@ -1063,22 +1119,43 @@ Finally, the trend of the F-measure resembles the one of the precision. Again, w
 
 To conclude, let us now compare the performances of LIME\#R and LIME\#C from the point of view of the $grid\_size$ parameter (Figure \ref{fig:limesharp_C_vs_gs} in the Appendix). 
 
-The only noticeable difference in the precision is that, when $grid\_size = 8$ and $shown\_features = 60$, LIME\#C behaves much worse than its counterpart: indeed, we have a precision of $\approx 0.25$ versus the $\approx 0.5$ of LIME\#R. This is actually consistent with what we discovered in the analysis of Figure \ref{subfig:R-C-comparison}.
+The only noticeable difference in the precision is that, when $grid\_size = 8$ and $shown\_features = 60$, LIME\#C behaves much worse than its counterpart: indeed, we have a precision of $\approx 0.25$ versus the $\approx 0.5$ of LIME\#R. This is actually consistent with what we discovered in Figure \ref{subfig:R-C-comparison}.
 
-As before, Figure \ref{subfig:limesharp_C_rec_vs_gs} shows that the recall follows almost the same trend as LIME\#R. The aspect that all these recall plots seem to underline is that the more we increase the grid size, the less performant the explainer is. 
+Figure \ref{subfig:limesharp_C_rec_vs_gs} shows that the recall follows almost the same trend as LIME\#R. The aspect that all these recall plots seem to underline is that the more we increase the grid size, the less performant the explainer is. 
 
 Even from the point of view of the grid size, we see that the F-measure follows the trend of the precision: again, when $grid\_size = 8$ and $shown\_features = 60$, LIME\#C is outperformed by LIME\#R ($\approx 0.4$ versus $\approx 0.7$, respectively).
 
+\newpage
+
 \section{Overall comparison}
+
+
+
+What emerges from the results obtained during the experiments is that high values of $grid\_size$ inevitably lead to low-quality explainers. This is because the more we reduce the size of the features, the less we are likely to capture meaningful patterns inside an image. On the other hand, lower values noticeably increase the chance of highlighting informative regions. We should however keep in mind that overly extended areas (e.g. when $grid\_size = 4$) would give rise to dispersive and coarse explanations.
+To achieve meaningful results, we should limit the number of highlighted areas as well. It is then good practice to keep the value of $shown\_features$ low, because otherwise we would run the risk of detecting useless patterns outside the reference area. In Figure \ref{fig:overall-prec} we have tested the impact of increasing the value of $shown\_features$ on the explanations' precision in the newly proposed versions of LIME. In each variant, we have set $grid\_size = 8$. For low values in the range 2-20, we have witnessed how the precision drops due to the inclusion of irrelevant patterns. Similar plots for recall and F-measure are included in the Appendix (see Figure \ref{fig:overall-rec-fmea}).
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{images/overall-figs/precision.png} 
+\caption{Trend of precision for increasing values of $shown\_features$. Fixing the value of $grid\_size$ to 8, we make a comparison between the newly proposed approaches (all the "\#" variants of LIME).}
+\label{fig:overall-prec}
+\end{figure}
+
+As a compromise, we now take a closer look at the performances of explanations (for all the variants of LIME\#) when $grid\_size = 8$, highlighting in each explanation from 2 to 10 features.
+Table \ref{tab:overall-precision-avg} shows the value of the precision for all the versions of LIME: we fixed $grid\_size = 8$ and, among all the 1000 images in the test set, we recorded the average value and the standard deviation. With the introduction of the grid-shaped segmentation (LIME\# gray, LIME\# color) explanations tend to cover the reference area more often. About the generation of the neighborhood, instead, we see that the usage of patches from other images (LIME\#R, LIME\#C) does not bring any kind of improvement.
+Table \ref{tab:overall-precision-median} shows instead the median value of the precision. The only thing to notice is that, when $shown\_features = 2$, the image-based variants perform worse than the others. Also, when $shown\_features = 8$, we see again that LIME\# gray and LIME\# color outperform the other versions.
+The tables of the recall and F-measure can be found in the appendix. In those cases, the best version in terms of performances is LIME color.
 
 \noindent
 \hspace{-2mm}
-\begin{table}
+\begin{table}[h]
 \footnotesize
 \def\arraystretch{1.3}
-\begin{tabularx}{\linewidth}{ll|llllll}
+\begin{tabularx}{\linewidth}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    
+            & \rotatebox[origin=c]{0}{\textbf{gray}}
+            & \rotatebox[origin=c]{0}{\textbf{color}}     & \rotatebox[origin=c]{0}{\textbf{\# gray}}     & \rotatebox[origin=c]{0}{\textbf{\# color}}    & \rotatebox[origin=c]{0}{\textbf{\#R}}         & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 & 2 & $.686 \pm .363$ & $.709 \pm .368$ & $.708 \pm .367$ & $\mathbf{.723 \pm .354}$ & $.614 \pm .388$ & $.616 \pm .388$ \\
@@ -1092,17 +1169,15 @@ Even from the point of view of the grid size, we see that the F-measure follows 
 \label{tab:overall-precision-avg}
 \end{table}
 
-What emerges from the results obtained during the experiments is that high values of $grid\_size$ inevitably lead to low-quality explainers. This is because the more we reduce the size of the features, the less we are likely to capture meaningful patterns inside an image. On the other hand, lower values noticeably increase the chance of highlighting informative regions. We should however keep in mind that overly extended areas (e.g. when $grid\_size = 4$) would give rise to dispersive and coarse explanations.
-
 \noindent
 \hspace{-2mm}
 \begin{table}[h]
 %\footnotesize
 \centering
-\def\arraystretch{1.2}
-\begin{tabularx}{.7\linewidth}{ll|XXXXXX}
+\def\arraystretch{1.1}
+\begin{tabular}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    & \rotatebox[origin=c]{0}{\textbf{gray}}      & \rotatebox[origin=c]{0}{\textbf{color}}     & \rotatebox[origin=c]{0}{\textbf{\# gray}}     & \rotatebox[origin=c]{0}{\textbf{\# color}}    & \rotatebox[origin=c]{0}{\textbf{\#R}}         & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 & 2 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} &      \textbf{1.00} & .500 & .500 \\
@@ -1111,28 +1186,23 @@ What emerges from the results obtained during the experiments is that high value
 & 8 &       .500 &        .500 &        \textbf{.625} &         \textbf{.625} &    .500 &    .500 \\
 & 10 &       .500 &        .500 &        .500 &         .500 &    .500 &    .500 \\
 %\hline
-\end{tabularx}
+\end{tabular}
 \caption{Median of the precision for all the versions of LIME (for all the "\#" variants, we have set $grid\_size = 8$).}
 \label{tab:overall-precision-median}
 \end{table}
 
-As a compromise, we now take a closer look at the performances of explanations (for all the variants of LIME\#) when $grid\_size = 8$, highlighting in each explanation from 2 to 10 features.
-Table \ref{tab:overall-precision-avg} shows the value of the precision for all the versions of LIME: we fixed $grid\_size = 8$ and, among all the 1000 images in the test set, we recorded the average value and the standard deviation. We see that, with the introduction of the grid-shaped segmentation (LIME\# gray, LIME\# color), explanations tend to cover the reference area more often. About the generation of the neighborhood, instead, we see that the usage of patches from other images (LIME\#R, LIME\#C) does not bring any kind of improvement, at least for such low values of $shown\_features$.
 
-Table \ref{tab:overall-precision-median} shows instead the median value of the precision. The only thing to notice is that, when $shown\_features = 2$, the image-based variants perform worse with respect to the others. Also, when $shown\_features = 8$, we see again that LIME\# gray and LIME\# color outperform the other versions.
+\chapter{Conclusion}\label{chapt:conclusions}
 
-The same kind of tables for the recall and F-measure can be found in the appendix. In those cases, the best version in terms of performances is LIME color.
+In this work we have proposed an extension to the work described in \cite{lime} and deepened their idea of explanation. In particular, we have focused on the concept of interpretability of an explanation and tested the impact deriving from the usage of different shapes in the definition of images' features. Another crucial point that we have stressed was the possibility of increasing people's trust in a model just by giving them an idea of the logic behind its decision, regardless of the correctness of the outcome. This way, users can understand the causes of errors and adapt a strategy to fix them.
 
+We have also asked ourselves what was the best way of defining neighborhood images when we do not have access to the image generation process. We have argued that replacing patches with solid colors is not a natural and convenient way of applying perturbations and proposed different solutions to approximate what would be the correct approach. For this reason, we have considered the usage of patches from other images in the neighborhood generation process and verified whether or not it was meaningful to choose visually similar features. In this regard, we have found that replacing image features with similar patterns (rather than random ones) prevents the explanation system from individuating relevant areas in the original image. The result was that explanations were less intuitive and not able to capture the representative features of each class. 
 
-\chapter{Conclusions and future works}\label{chapt:conclusions}
+Another contribution that we have made was the definition of a measure of quality of an explanation (i.e. what is its level of comprehensibility). To do that, we have created a new annotated data set that contains a reference area (ideally, the part of the image that would be highlighted by a hypothetical optimal explanation) for each image in the test set. Referring to that information, we have also defined three measures of goodness of an explanation (from different point of views) and evaluated them on the different versions of LIME.
 
-In this work we have proposed an extension to the work described in \cite{lime} and deepened their idea of explanation. In particular, we have focused on the concept of interpretability of an explanation and tested the impact deriving from the usage of different shapes in the definition of images' features. Another crucial point that we have stressed was the possibility of increasing people's trust in a model just by giving them an idea of the logic behind its decision, regardless of the correctness of the outcome. This way, users can understand the causes of errors and consequently adapt a strategy to fix them.
+The peculiarity that all the variants of explainers in our approach had in common was the generation of a visual, textless explanation which only spots the areas of the image that the model looks at when performing its predictions. This perfectly makes sense in single-object recognition scenarios, where the goal is to identify the category of a unique part of the image. However, this solution turns out to be inappropriate in scene recognition challenges, where the main objective is to summarize the context of a picture based on different (and possibly unrelated) objects inside it. 
 
-We have also asked ourselves what was the best way of defining neighborhood images when we do not have access to the image generation process. We have argued that replacing patches with solid colors is not a natural and covenient way of applying perturbations and proposed different solutions to approximate what would be the correct approach. For this reason, we have considered the usage of patches from other images in the neighborhood generation process and verified whether or not it was meaningful to choose visually similar features. In this regard, we have found that replacing image features with similar patterns (rather than random ones) prevents the explanation system from individuating relevant areas in the original image. The result was that explanations were less intuitive and not able to capture the representative features of each class. 
-
-Another contribution that we have made was the definition of a measure of quality of an explanation (i.e. what is its level of comprehensibility). To do that, we have created a new annotated dataset that contains a reference area (ideally, the part of the image that would be highlighted by a hypothetical optimal explanation) for each image in the test set. Referring to that information, we have also defined three measures of goodness of an explanation (from different point of views) and evaluated them on the different versions of LIME.
-
-The peculiarity that all the variants of explanators in our approach had in common was the generation of a visual, textless explanation which only spots the areas of the image that the model looks at when performing its predictions. This perfectly makes sense in single-object recognition scenarios, where the goal is to identify the category of a unique part of the image. However, this solution turns out to be inappropriate in scene recognition challenges, where the main objective is to summarize the context of a picture based on different (and possibly unrelated) objects inside it. 
+\bigskip
 
 An interesting extension to this work would be then the generation of enriched explanations, in which different parts of an image are labeled with strings. The idea is to convince the user of the ability of the black box of recognizing scenes by giving actual proofs that support its decisions. 
 As an example, suppose we teach our model to recognize pictures about classrooms: what we expect is that the black box annotates corresponding parts of the images with strings like \textit{blackboard}, \textit{teacher}, \textit{desk}, \textit{kid} and so on.
@@ -1140,7 +1210,7 @@ As an example, suppose we teach our model to recognize pictures about classrooms
 Another future research direction would be the modification of the image-based neighborhood generation process. We have seen that the usage of images which are visually similar to the one to be explained does not allow the explanation system to recognize representative features. One possible solution would be to draw both same-cluster and random images, each with a fixed probability.
 Other studies might be focused instead on defining a more sophisticated neighborhood generation technique, rather than drawing instances completely at random.
 
-Finally, an open research question is the problem of estimating the level of comprehensibility of an explanation. The problem with the method we have presented is that, for large datasets, cutting images by hand is just unfeasible as it would require huge amounts of time. The ideal solution would be a sistematic approach (e.g. a mathematical formalism) that makes the whole process automatic.
+Finally, an open research question is the problem of estimating the level of comprehensibility of an explanation. The problem with the method we have presented is that, for large data sets, cutting images by hand is just unfeasible as it would require huge amounts of time. The ideal solution would be a systematic approach (e.g. a mathematical formalism) that makes the whole process automatic.
 
 
 \bibliographystyle{ieeetr}
@@ -1153,6 +1223,15 @@ Finally, an open research question is the problem of estimating the level of com
 \chapter{Experiments results}
 
 We attach here (for reasons of readability) the plots that show the performances of the different versions of LIME. Each of the plots is referenced and described in detail in Chapter \ref{chapt:experiments}.
+
+\bigskip
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.9\textwidth]{images/overall-figs/rec-fmea.png} 
+\caption{Trends of recall and F-measure for increasing values of $shown\_features$. Fixing the value of $grid\_size$ to 8, we make a comparison between the newly proposed approaches (all the "\#" variants of LIME).}
+\label{fig:overall-rec-fmea}
+\end{figure}
 
 %\section{LIME\# gray}
 
@@ -1298,9 +1377,14 @@ We attach here (for reasons of readability) the plots that show the performances
 \begin{table}[h]
 \footnotesize
 \def\arraystretch{1.3}
-\begin{tabularx}{\linewidth}{ll|llllll}
+\begin{tabularx}{\linewidth}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    & \rotatebox[origin=c]{0}{\textbf{gray}}      
+            & \rotatebox[origin=c]{0}{\textbf{color}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# gray}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# color}}    
+            & \rotatebox[origin=c]{0}{\textbf{\#R}}         
+            & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 & 2 & $.150 \pm .142$ & $\mathbf{.155 \pm .141}$ & $.103 \pm .111$ & $.105 \pm .114$ & $.085 \pm .098$ & $.082 \pm .096$ \\
@@ -1314,14 +1398,22 @@ We attach here (for reasons of readability) the plots that show the performances
 \label{tab:overall-recall-avg}
 \end{table}
 
+%\bigskip
+
 \noindent
 \hspace{-2mm}
 \begin{table}[h]
+\centering
 %\footnotesize
 \def\arraystretch{1.3}
-\begin{tabularx}{\linewidth}{ll|XXXXXX}
+\begin{tabular}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    & \rotatebox[origin=c]{0}{\textbf{gray}}      
+            & \rotatebox[origin=c]{0}{\textbf{color}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# gray}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# color}}    
+            & \rotatebox[origin=c]{0}{\textbf{\#R}}         
+            & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 & 2 &       .109 &        \textbf{.113} &        .068 &         .067 &    .057 &    .054 \\
@@ -1330,20 +1422,26 @@ We attach here (for reasons of readability) the plots that show the performances
 & 8 &       .281 &        \textbf{.284} &        .220 &         .218 &    .192 &    .186 \\
 & 10 &       .322 &        \textbf{.327} &        .261 &         .256 &    .231 &    .225 \\
 %\hline
-\end{tabularx}
+\end{tabular}
 \caption{Median of the recall for all the versions of LIME (for all the "\#" variants, we have set $grid\_size = 8$).}
 \label{tab:overall-recall-median}
 \end{table}
 
+\newpage
 
 \noindent
 \hspace{-2mm}
 \begin{table}[h]
 \footnotesize
 \def\arraystretch{1.3}
-\begin{tabularx}{\linewidth}{ll|llllll}
+\begin{tabularx}{\linewidth}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    & \rotatebox[origin=c]{0}{\textbf{gray}}      
+            & \rotatebox[origin=c]{0}{\textbf{color}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# gray}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# color}}    
+            & \rotatebox[origin=c]{0}{\textbf{\#R}}         
+            & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 &  2 & $.202 \pm .165$ & $\mathbf{.210 \pm .169}$ & $.154 \pm .139$ & $.156 \pm .138$ & $.127 \pm .127$ & $.126 \pm .127$ \\
@@ -1361,10 +1459,16 @@ We attach here (for reasons of readability) the plots that show the performances
 \hspace{-2mm}
 \begin{table}[h]
 %\footnotesize
+\centering
 \def\arraystretch{1.3}
-\begin{tabularx}{\linewidth}{ll|XXXXXX}
+\begin{tabular}{ll|cccccc}
 %\hline
-            &    & \rotatebox[origin=c]{55}{\textbf{LIME gray}}      & \rotatebox[origin=c]{55}{\textbf{LIME color}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# gray}}     & \rotatebox[origin=c]{55}{\textbf{LIME\# color}}    & \rotatebox[origin=c]{55}{\textbf{LIME\#R}}         & \rotatebox[origin=c]{55}{\textbf{LIME\#C}}         \\
+            &    & \rotatebox[origin=c]{0}{\textbf{gray}}      
+            & \rotatebox[origin=c]{0}{\textbf{color}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# gray}}     
+            & \rotatebox[origin=c]{0}{\textbf{\# color}}    
+            & \rotatebox[origin=c]{0}{\textbf{\#R}}         
+            & \rotatebox[origin=c]{0}{\textbf{\#C}}         \\
 \hline
 \multirow{7}{*}{\rotatebox[origin=c]{90}{\centering \textbf{Shown features}}} &&&&&&\\
 & 2 &       .169 &        \textbf{.177} &        .120 &         .120 &    .098 &    .097 \\
@@ -1373,9 +1477,10 @@ We attach here (for reasons of readability) the plots that show the performances
 & 8 &       .336 &        \textbf{.347} &        .295 &         .299 &    .265 &    .260 \\
 & 10 &       .360 &        \textbf{.365} &        .329 &         .329 &    .301 &    .296 \\
 %\hline
-\end{tabularx}
+\end{tabular}
 \caption{Median of the F-measure for all the versions of LIME (for all the "\#" variants, we have set $grid\_size = 8$).}
 \label{tab:overall-fmeasure-median}
 \end{table}
+
 
 \end{document}

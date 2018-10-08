@@ -299,10 +299,152 @@ class LimeImageExplainer(object):
         else:
             return data, np.array(labels)
 
+class LimeImageMixedPatchworkExplainer(LimeImageExplainer): 
+    
+    # Extend LimeImageExplainer so that  three new parameters are added. These
+    # parameters holds i) images of the same cluster, ii) all other images and
+    # iii) the probability to draw images from the same cluster.
+    def __init__(self, same_clus_images, all_other_images, same_clus_prob, *args, **kwargs):
+        super(LimeImageMixedPatchworkExplainer, self).__init__(*args, **kwargs)
+        self.same_clus_images = same_clus_images
+        self.all_other_images = all_other_images
+        self.same_clus_prob = same_clus_prob
+        
+    # Override
+    def explain_instance(self, image, classifier_fn, labels=(1,),
+                         hide_color=None,
+                         top_labels=5, num_features=100000, num_samples=1000,
+                         batch_size=10,
+                         segmentation_fn=None,
+                         distance_metric='cosine',
+                         model_regressor=None,
+                         random_seed=None,
+                         return_sample_neighborhood_images=False):
+        
+        if len(image.shape) == 2:
+            image = gray2rgb(image)
+        if random_seed is None:
+            random_seed = self.random_state.randint(0, high=1000)
+
+        if segmentation_fn is None:
+            segmentation_fn = SegmentationAlgorithm('quickshift', kernel_size=4,
+                                                    max_dist=200, ratio=0.2,
+                                                    random_seed=random_seed)
+        try:
+            segments = segmentation_fn(image)
+        except ValueError as e:
+            raise e
+
+        # Draw the fudged_image at random
+        #import random
+        fudged_image = None#random.choice(self.image_pool)
+
+        top = labels
+
+        if(return_sample_neighborhood_images):
+            data, labels, samples = self.data_labels(image, fudged_image, segments,
+                                                     classifier_fn, num_samples,
+                                                     batch_size=batch_size, 
+                                                     return_sample_neighborhood_images=return_sample_neighborhood_images,
+                                                     )
+        else:
+            data, labels = self.data_labels(image, fudged_image, segments,
+                                            classifier_fn, num_samples,
+                                            batch_size=batch_size, 
+                                            return_sample_neighborhood_images=return_sample_neighborhood_images,
+                                            )
+
+        distances = sklearn.metrics.pairwise_distances(
+            data,
+            data[0].reshape(1, -1),
+            metric=distance_metric
+        ).ravel()
+    
+        ret_exp = ImageExplanation(image, segments)
+
+        if top_labels:
+            top = np.argsort(labels[0])[-top_labels:]
+            ret_exp.top_labels = list(top)
+            ret_exp.top_labels.reverse()
+            
+        for label in top:
+            (ret_exp.intercept[label],
+             ret_exp.local_exp[label],
+             ret_exp.score, ret_exp.local_pred) = self.base.explain_instance_with_data(
+                data, labels, distances, label, num_features,
+                model_regressor=model_regressor,
+                feature_selection=self.feature_selection)
+
+        if(return_sample_neighborhood_images):             
+            return ret_exp, samples
+        else:
+            return ret_exp
+        
+    # Override
+    def data_labels(self,
+                    image,
+                    fudged_image,
+                    segments,
+                    classifier_fn,
+                    num_samples,
+                    batch_size=10,
+                    return_sample_neighborhood_images=False):
+        
+        import random as rnd
+        
+        n_features = np.unique(segments).shape[0]
+        data = self.random_state.randint(0, 2, num_samples * n_features)\
+            .reshape((num_samples, n_features))
+        labels = []
+        data[0, :] = 1
+        imgs = []
+        samples = []
+        
+        for row in data:
+            temp = copy.deepcopy(image)
+            zeros = np.where(row == 0)[0]
+            mask = np.zeros(segments.shape)#.astype(bool)
+            
+            all_other_images_indexes = range(1,len(self.all_other_images)+1)
+            same_clus_images_indexes = range(1,len(self.same_clus_images)+1)
+            
+            for z in zeros:
+                proba = rnd.random()
+                if proba < self.same_clus_prob:
+                    val = - rnd.choice(same_clus_images_indexes)
+                else:
+                    val = rnd.choice(all_other_images_indexes)
+                    
+                mask[segments == z] = val
+            
+            for i in all_other_images_indexes:
+                temp[mask == i] = self.all_other_images[i-1][mask == i]
+            
+            for j in same_clus_images_indexes:
+                temp[mask == -j] = self.same_clus_images[j-1][mask == -j]
+                
+                
+            imgs.append(temp)
+            samples = imgs
+            
+            if len(imgs) == batch_size:
+                preds = classifier_fn(np.array(imgs))
+                labels.extend(preds)
+                imgs = []
+                
+        if len(imgs) > 0:
+            preds = classifier_fn(np.array(imgs))
+            labels.extend(preds)
+
+        if(return_sample_neighborhood_images):
+            return data, np.array(labels), samples
+        else:
+            return data, np.array(labels)
+    
 
 class LimeImagePatchworkExplainer(LimeImageExplainer): 
 
-    # Extend LineImageExplainer so that  a new parameter is added. This
+    # Extend LimeImageExplainer so that  a new parameter is added. This
     # parameter holds the collection of images to draw the fudged image
     # (i.e. image to show when superpixel is turned off) from.
     def __init__(self, image_pool, *args, **kwargs):
@@ -424,6 +566,7 @@ class LimeImagePatchworkExplainer(LimeImageExplainer):
             return ret_exp, samples
         else:
             return ret_exp
+    
         
 class LimeImageEnhancedPatchworkExplainer(LimeImagePatchworkExplainer):
     

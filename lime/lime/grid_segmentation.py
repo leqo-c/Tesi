@@ -1,5 +1,4 @@
 import numpy as np
-import math
 
 def old_gridSegmentation(parts, img):
     
@@ -24,6 +23,8 @@ def old_gridSegmentation(parts, img):
     return segments.astype(int)
 
 def gridSegmentation(parts, img):
+    
+    #print "image shape: " + str(img.shape)
     
     segments = np.zeros(img.shape[:2])
     segments_per_row = img.shape[:2][0] / parts

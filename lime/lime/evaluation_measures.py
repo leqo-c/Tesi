@@ -14,7 +14,8 @@ def evaluate_explanations(explainer_type,
                           hide_col=0,
                           image_pool=[], # For lime#R
                           clustering_labels=None, # For lime#C
-                          shown_features=10000): 
+                          shown_features=10000,
+                          draw_prob=0.5): 
     
     """
     Evaluates the quality of the explanations of the given explainer
@@ -34,6 +35,8 @@ def evaluate_explanations(explainer_type,
         hide_col:          when using basic versions of Lime, this is the
                            color corresponding to a turned-off feature;
         shown_features:    number of features shown in the explanation;
+        draw_prob:         probability to extract an image of the same
+                           cluster (just for LIME#RC)
     
     """
     lime_sharp_clus = False
@@ -48,8 +51,10 @@ def evaluate_explanations(explainer_type,
         explainer = lime_image.LimeImageEnhancedPatchworkExplainer(image_pool=image_pool)
     elif explainer_type == 'lime#C':
         lime_sharp_clus = True
-        #explainer = lime_image.LimeImagePatchworkExplainer(image_pool=[])
-        explainer = lime_image.LimeImageEnhancedPatchworkExplainer(image_pool=[])
+        explainer = lime_image.LimeImagePatchworkExplainer(image_pool=[])
+        #explainer = lime_image.LimeImageEnhancedPatchworkExplainer(image_pool=[])
+    elif explainer_type == 'lime#RC':
+        lime_sharp_rc = True
     else:
         print("Unsupported explainer type")
         return
@@ -70,6 +75,13 @@ def evaluate_explanations(explainer_type,
                                               images)
             #print "len of pool = %d" % len(pool)
             explainer.image_pool = img_pool
+            
+        elif lime_sharp_rc:
+            same_clus = get_images_of_same_cluster(clustering_labels[i], clustering_labels, images)
+            other_clus = get_images_of_other_clusters(clustering_labels[i],
+                                                      clustering_labels,
+                                                      images)
+            explainer = lime_image.LimeImageMixedPatchworkExplainer(same_clus, other_clus, draw_prob)
         
         # Explanation of the i-th image, using the previously
         # instantiated explainer
@@ -109,6 +121,10 @@ def evaluate_explanations(explainer_type,
         
         if lime_sharp_clus:
             del img_pool
+            
+        if lime_sharp_rc:
+            del same_clus
+            del other_clus
         
     return np.array(list_of_qualities)
 
@@ -124,6 +140,14 @@ def get_images_of_same_cluster(image_label, all_labels, all_images):
     indexes_of_images_in_the_same_cluster, = np.where(all_labels == image_label)
     all_images = np.array(all_images)
     result = all_images[indexes_of_images_in_the_same_cluster]
+    
+    return list(result)
+
+def get_images_of_other_clusters(image_label, all_labels, all_images):
+    all_labels = np.array(all_labels)
+    indexes_of_images_in_other_clusters, = np.where(all_labels != image_label)
+    all_images = np.array(all_images)
+    result = all_images[indexes_of_images_in_other_clusters]
     
     return list(result)
 
